@@ -1,0 +1,4790 @@
+[
+  {
+    "name": "4 weeks no promo",
+    "cells": {
+      "F3": {
+        "value": "Quotation ",
+        "formula": null
+      },
+      "F4": {
+        "value": "8623 McCowan Road, Markham, ON, L3P 1M4",
+        "formula": null
+      },
+      "F5": {
+        "value": "647-249-8606",
+        "formula": null
+      },
+      "B8": {
+        "value": "46291",
+        "formula": null
+      },
+      "F10": {
+        "value": "Floor ",
+        "formula": null
+      },
+      "G10": {
+        "value": "ForthFloor",
+        "formula": null
+      },
+      "B11": {
+        "value": "Recurring Charge",
+        "formula": null
+      },
+      "C11": {
+        "value": "Unit",
+        "formula": null
+      },
+      "D11": {
+        "value": "Insurance ",
+        "formula": null
+      },
+      "F11": {
+        "value": "Unit Size  ",
+        "formula": null
+      },
+      "G11": {
+        "value": "10x5",
+        "formula": null
+      },
+      "B12": {
+        "value": "Unit",
+        "formula": null
+      },
+      "C12": {
+        "value": "10x5",
+        "formula": "G11"
+      },
+      "D12": {
+        "value": "1 cycle",
+        "formula": null
+      },
+      "F12": {
+        "value": "Unit Price",
+        "formula": null
+      },
+      "G12": {
+        "value": "105",
+        "formula": null
+      },
+      "B13": {
+        "value": "Price (1 cycle)",
+        "formula": null
+      },
+      "C13": {
+        "value": "105",
+        "formula": "G12"
+      },
+      "D13": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "F13": {
+        "value": "Unit Price after Tax",
+        "formula": null
+      },
+      "G13": {
+        "value": "118.64999999999999",
+        "formula": "G12*113%"
+      },
+      "B14": {
+        "value": "Discounted (-)",
+        "formula": null
+      },
+      "F14": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G14": {
+        "value": "14.95",
+        "formula": null
+      },
+      "B15": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C15": {
+        "value": "13.65",
+        "formula": "(C13*13%)"
+      },
+      "D15": {
+        "value": "1.9435",
+        "formula": "D13*13%"
+      },
+      "F15": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "G15": {
+        "value": "19.95",
+        "formula": null
+      },
+      "B16": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C16": {
+        "value": "118.65",
+        "formula": "C13+C15"
+      },
+      "D16": {
+        "value": "16.8935",
+        "formula": "D13+D15"
+      },
+      "B17": {
+        "value": "Total",
+        "formula": null
+      },
+      "D17": {
+        "value": "135.54349999999999",
+        "formula": "C16+D16"
+      },
+      "B20": {
+        "value": "One-Time Charge",
+        "formula": null
+      },
+      "C20": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "D20": {
+        "value": "Cylinder Lock",
+        "formula": null
+      },
+      "F20": {
+        "value": "After Promo",
+        "formula": null
+      },
+      "G20": {
+        "value": "Rate",
+        "formula": null
+      },
+      "B21": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "C21": {
+        "value": "19.95",
+        "formula": null
+      },
+      "F21": {
+        "value": "Rent",
+        "formula": null
+      },
+      "G21": {
+        "value": "105",
+        "formula": "G12"
+      },
+      "B22": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C22": {
+        "value": "2.5935000000000001",
+        "formula": "(C21)*13%"
+      },
+      "D22": {
+        "value": "0",
+        "formula": "D21*13%"
+      },
+      "F22": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G22": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "B23": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C23": {
+        "value": "22.543499999999998",
+        "formula": "C21+C22"
+      },
+      "D23": {
+        "value": "0",
+        "formula": "D21+D22"
+      },
+      "F23": {
+        "value": "tax ",
+        "formula": null
+      },
+      "G23": {
+        "value": "15.593500000000001",
+        "formula": "(G21*13%)+(G22*13%)"
+      },
+      "B24": {
+        "value": "Total",
+        "formula": null
+      },
+      "D24": {
+        "value": "22.543499999999998",
+        "formula": "C23+D23"
+      },
+      "C27": {
+        "value": "Grand Total ",
+        "formula": null
+      },
+      "D27": {
+        "value": "158.08699999999999",
+        "formula": "D17+D24"
+      },
+      "F27": {
+        "value": "Total",
+        "formula": null
+      },
+      "G27": {
+        "value": "135.54349999999999",
+        "formula": "G21+G22+G23"
+      },
+      "B30": {
+        "value": "Unit Size",
+        "formula": null
+      },
+      "C30": {
+        "value": "First 4 weeks",
+        "formula": null
+      },
+      "D30": {
+        "value": "Regular",
+        "formula": null
+      },
+      "B31": {
+        "value": "10x5",
+        "formula": "G11"
+      },
+      "C31": {
+        "value": "158.08699999999999",
+        "formula": "D27"
+      },
+      "D31": {
+        "value": "135.54349999999999",
+        "formula": "G27"
+      }
+    }
+  },
+  {
+    "name": "4 weeks",
+    "cells": {
+      "F3": {
+        "value": "Quotation ",
+        "formula": null
+      },
+      "F4": {
+        "value": "8623 McCowan Road, Markham, ON, L3P 1M4",
+        "formula": null
+      },
+      "F5": {
+        "value": "647-249-8606",
+        "formula": null
+      },
+      "B8": {
+        "value": "46292",
+        "formula": null
+      },
+      "B10": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "C10": {
+        "value": "50% for 4 weeks ",
+        "formula": null
+      },
+      "F10": {
+        "value": "Floor ",
+        "formula": null
+      },
+      "G10": {
+        "value": "SecondFloor",
+        "formula": null
+      },
+      "B11": {
+        "value": "Recurring Charge",
+        "formula": null
+      },
+      "C11": {
+        "value": "Unit",
+        "formula": null
+      },
+      "D11": {
+        "value": "Insurance ",
+        "formula": null
+      },
+      "F11": {
+        "value": "Unit Size  ",
+        "formula": null
+      },
+      "G11": {
+        "value": "10x11",
+        "formula": null
+      },
+      "B12": {
+        "value": "Unit",
+        "formula": null
+      },
+      "C12": {
+        "value": "10x11",
+        "formula": "G11"
+      },
+      "D12": {
+        "value": "1 cycle",
+        "formula": null
+      },
+      "F12": {
+        "value": "Unit Price",
+        "formula": null
+      },
+      "G12": {
+        "value": "200",
+        "formula": null
+      },
+      "B13": {
+        "value": "Price (1 cycle)",
+        "formula": null
+      },
+      "C13": {
+        "value": "200",
+        "formula": "G12"
+      },
+      "D13": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "F13": {
+        "value": "Unit Price after Tax",
+        "formula": null
+      },
+      "G13": {
+        "value": "225.99999999999997",
+        "formula": "G12*113%"
+      },
+      "B14": {
+        "value": "Discounted (-)",
+        "formula": null
+      },
+      "C14": {
+        "value": "100",
+        "formula": "G12/2"
+      },
+      "F14": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G14": {
+        "value": "14.95",
+        "formula": null
+      },
+      "B15": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C15": {
+        "value": "13",
+        "formula": "(C14)*13%"
+      },
+      "D15": {
+        "value": "1.9435",
+        "formula": "D13*13%"
+      },
+      "F15": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "G15": {
+        "value": "19.95",
+        "formula": null
+      },
+      "B16": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C16": {
+        "value": "113",
+        "formula": "C14+C15"
+      },
+      "D16": {
+        "value": "16.8935",
+        "formula": "D13+D15"
+      },
+      "B17": {
+        "value": "Total",
+        "formula": null
+      },
+      "D17": {
+        "value": "129.89349999999999",
+        "formula": "C16+D16"
+      },
+      "B20": {
+        "value": "One-Time Charge",
+        "formula": null
+      },
+      "C20": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "D20": {
+        "value": "Cylinder Lock",
+        "formula": null
+      },
+      "F20": {
+        "value": "After Promo",
+        "formula": null
+      },
+      "G20": {
+        "value": "Rate",
+        "formula": null
+      },
+      "B21": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "C21": {
+        "value": "19.95",
+        "formula": null
+      },
+      "D21": {
+        "value": "18.989999999999998",
+        "formula": null
+      },
+      "F21": {
+        "value": "Rent",
+        "formula": null
+      },
+      "G21": {
+        "value": "200",
+        "formula": "G12"
+      },
+      "B22": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C22": {
+        "value": "2.5935000000000001",
+        "formula": "(C21)*13%"
+      },
+      "D22": {
+        "value": "2.4686999999999997",
+        "formula": "D21*13%"
+      },
+      "F22": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G22": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "B23": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C23": {
+        "value": "22.543499999999998",
+        "formula": "C21+C22"
+      },
+      "D23": {
+        "value": "21.458699999999997",
+        "formula": "D21+D22"
+      },
+      "F23": {
+        "value": "tax ",
+        "formula": null
+      },
+      "G23": {
+        "value": "27.9435",
+        "formula": "(G21*13%)+(G22*13%)"
+      },
+      "B24": {
+        "value": "Total",
+        "formula": null
+      },
+      "D24": {
+        "value": "44.002199999999995",
+        "formula": "C23+D23"
+      },
+      "C27": {
+        "value": "Grand Total ",
+        "formula": null
+      },
+      "D27": {
+        "value": "173.89569999999998",
+        "formula": "D17+D24"
+      },
+      "F27": {
+        "value": "Total",
+        "formula": null
+      },
+      "G27": {
+        "value": "242.89349999999999",
+        "formula": "G21+G22+G23"
+      },
+      "B30": {
+        "value": "Unit Size",
+        "formula": null
+      },
+      "C30": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "D30": {
+        "value": "Regular",
+        "formula": null
+      },
+      "B31": {
+        "value": "10x11",
+        "formula": "G11"
+      },
+      "C31": {
+        "value": "173.89569999999998",
+        "formula": "D27"
+      },
+      "D31": {
+        "value": "242.89349999999999",
+        "formula": "G27"
+      }
+    }
+  },
+  {
+    "name": "8 weeks",
+    "cells": {
+      "F3": {
+        "value": "Quotation ",
+        "formula": null
+      },
+      "F4": {
+        "value": "8623 McCowan Road, Markham, ON, L3P 1M4",
+        "formula": null
+      },
+      "F5": {
+        "value": "647-249-8606",
+        "formula": null
+      },
+      "B10": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "C10": {
+        "value": "50% for 8 weeks ",
+        "formula": null
+      },
+      "F10": {
+        "value": "Floor ",
+        "formula": null
+      },
+      "G10": {
+        "value": "6thFloor",
+        "formula": null
+      },
+      "B11": {
+        "value": "Recurring Charge",
+        "formula": null
+      },
+      "C11": {
+        "value": "Unit",
+        "formula": null
+      },
+      "D11": {
+        "value": "Insurance ",
+        "formula": null
+      },
+      "F11": {
+        "value": "Unit Size  ",
+        "formula": null
+      },
+      "G11": {
+        "value": "5x5",
+        "formula": null
+      },
+      "B12": {
+        "value": "Unit",
+        "formula": null
+      },
+      "C12": {
+        "value": "5x5",
+        "formula": "G11"
+      },
+      "D12": {
+        "value": "2 cycles",
+        "formula": null
+      },
+      "F12": {
+        "value": "Unit Price",
+        "formula": null
+      },
+      "G12": {
+        "value": "42",
+        "formula": null
+      },
+      "B13": {
+        "value": "Price (1 cycle)",
+        "formula": null
+      },
+      "C13": {
+        "value": "84",
+        "formula": "G12*2"
+      },
+      "D13": {
+        "value": "29.9",
+        "formula": "G14*2"
+      },
+      "F13": {
+        "value": "Unit Price after Tax",
+        "formula": null
+      },
+      "G13": {
+        "value": "47.459999999999994",
+        "formula": "G12*113%"
+      },
+      "B14": {
+        "value": "Discounted (-)",
+        "formula": null
+      },
+      "C14": {
+        "value": "42",
+        "formula": "(G12*2)/2"
+      },
+      "F14": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G14": {
+        "value": "14.95",
+        "formula": null
+      },
+      "B15": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C15": {
+        "value": "5.46",
+        "formula": "(C14)*13%"
+      },
+      "D15": {
+        "value": "3.887",
+        "formula": "D13*13%"
+      },
+      "F15": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "G15": {
+        "value": "19.95",
+        "formula": null
+      },
+      "B16": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C16": {
+        "value": "47.46",
+        "formula": "C14+C15"
+      },
+      "D16": {
+        "value": "33.786999999999999",
+        "formula": "D13+D15"
+      },
+      "B17": {
+        "value": "Total",
+        "formula": null
+      },
+      "D17": {
+        "value": "81.247",
+        "formula": "C16+D16"
+      },
+      "B20": {
+        "value": "One-Time Charge",
+        "formula": null
+      },
+      "C20": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "D20": {
+        "value": "Cylinder Lock",
+        "formula": null
+      },
+      "F20": {
+        "value": "After Promo",
+        "formula": null
+      },
+      "G20": {
+        "value": "Rate",
+        "formula": null
+      },
+      "B21": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "C21": {
+        "value": "19.95",
+        "formula": null
+      },
+      "D21": {
+        "value": "18.989999999999998",
+        "formula": null
+      },
+      "F21": {
+        "value": "Rent",
+        "formula": null
+      },
+      "G21": {
+        "value": "42",
+        "formula": "G12"
+      },
+      "B22": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C22": {
+        "value": "2.5935000000000001",
+        "formula": "(C21)*13%"
+      },
+      "D22": {
+        "value": "2.4686999999999997",
+        "formula": "D21*13%"
+      },
+      "F22": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G22": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "B23": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C23": {
+        "value": "22.543499999999998",
+        "formula": "C21+C22"
+      },
+      "D23": {
+        "value": "21.458699999999997",
+        "formula": "D21+D22"
+      },
+      "F23": {
+        "value": "tax ",
+        "formula": null
+      },
+      "G23": {
+        "value": "7.4035000000000002",
+        "formula": "(G21*13%)+(G22*13%)"
+      },
+      "B24": {
+        "value": "Total",
+        "formula": null
+      },
+      "D24": {
+        "value": "44.002199999999995",
+        "formula": "C23+D23"
+      },
+      "C27": {
+        "value": "Grand Total ",
+        "formula": null
+      },
+      "D27": {
+        "value": "125.2492",
+        "formula": "D17+D24"
+      },
+      "F27": {
+        "value": "Total",
+        "formula": null
+      },
+      "G27": {
+        "value": "64.353499999999997",
+        "formula": "G21+G22+G23"
+      },
+      "B30": {
+        "value": "Unit Size",
+        "formula": null
+      },
+      "C30": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "D30": {
+        "value": "Regular",
+        "formula": null
+      },
+      "B31": {
+        "value": "5x5",
+        "formula": "G11"
+      },
+      "C31": {
+        "value": "125.2492",
+        "formula": "D27"
+      },
+      "D31": {
+        "value": "64.353499999999997",
+        "formula": "G27"
+      }
+    }
+  },
+  {
+    "name": "12 weeks",
+    "cells": {
+      "F3": {
+        "value": "Quotation ",
+        "formula": null
+      },
+      "F4": {
+        "value": "8623 McCowan Road, Markham, ON, L3P 1M4",
+        "formula": null
+      },
+      "F5": {
+        "value": "647-249-8606",
+        "formula": null
+      },
+      "B8": {
+        "value": "46306",
+        "formula": null
+      },
+      "B10": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "C10": {
+        "value": "50% for 12 weeks ",
+        "formula": null
+      },
+      "F10": {
+        "value": "Floor ",
+        "formula": null
+      },
+      "G10": {
+        "value": "Ground",
+        "formula": null
+      },
+      "B11": {
+        "value": "Recurring Charge",
+        "formula": null
+      },
+      "C11": {
+        "value": "Unit",
+        "formula": null
+      },
+      "D11": {
+        "value": "Insurance ",
+        "formula": null
+      },
+      "F11": {
+        "value": "Unit Size  ",
+        "formula": null
+      },
+      "G11": {
+        "value": "5x5",
+        "formula": null
+      },
+      "B12": {
+        "value": "Unit",
+        "formula": null
+      },
+      "C12": {
+        "value": "5x5",
+        "formula": "G11"
+      },
+      "D12": {
+        "value": "3 cycles",
+        "formula": null
+      },
+      "F12": {
+        "value": "Unit Price",
+        "formula": null
+      },
+      "G12": {
+        "value": "33",
+        "formula": null
+      },
+      "B13": {
+        "value": "Price (1 cycle)",
+        "formula": null
+      },
+      "C13": {
+        "value": "99",
+        "formula": "G12*3"
+      },
+      "F13": {
+        "value": "Unit Price after Tax",
+        "formula": null
+      },
+      "G13": {
+        "value": "37.29",
+        "formula": "G12*113%"
+      },
+      "B14": {
+        "value": "Discounted (-)",
+        "formula": null
+      },
+      "C14": {
+        "value": "49.5",
+        "formula": "(G12*3)/2"
+      },
+      "F14": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G14": {
+        "value": "0",
+        "formula": null
+      },
+      "B15": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C15": {
+        "value": "6.4350000000000005",
+        "formula": "(C14)*13%"
+      },
+      "D15": {
+        "value": "0",
+        "formula": "D13*13%"
+      },
+      "F15": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "G15": {
+        "value": "19.95",
+        "formula": null
+      },
+      "B16": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C16": {
+        "value": "55.935000000000002",
+        "formula": "C14+C15"
+      },
+      "D16": {
+        "value": "0",
+        "formula": "D13+D15"
+      },
+      "B17": {
+        "value": "Total",
+        "formula": null
+      },
+      "D17": {
+        "value": "55.935000000000002",
+        "formula": "C16+D16"
+      },
+      "J18": {
+        "value": " ",
+        "formula": null
+      },
+      "B20": {
+        "value": "One-Time Charge",
+        "formula": null
+      },
+      "C20": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "D20": {
+        "value": "Cylinder Lock",
+        "formula": null
+      },
+      "F20": {
+        "value": "After Promo",
+        "formula": null
+      },
+      "G20": {
+        "value": "Rate",
+        "formula": null
+      },
+      "B21": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "C21": {
+        "value": "19.95",
+        "formula": null
+      },
+      "D21": {
+        "value": "18.989999999999998",
+        "formula": null
+      },
+      "F21": {
+        "value": "Rent",
+        "formula": null
+      },
+      "G21": {
+        "value": "33",
+        "formula": "G12"
+      },
+      "B22": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C22": {
+        "value": "2.5935000000000001",
+        "formula": "(C21)*13%"
+      },
+      "D22": {
+        "value": "2.4686999999999997",
+        "formula": "D21*13%"
+      },
+      "F22": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G22": {
+        "value": "0",
+        "formula": "G14"
+      },
+      "B23": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C23": {
+        "value": "22.543499999999998",
+        "formula": "C21+C22"
+      },
+      "D23": {
+        "value": "21.458699999999997",
+        "formula": "D21+D22"
+      },
+      "F23": {
+        "value": "tax ",
+        "formula": null
+      },
+      "G23": {
+        "value": "4.29",
+        "formula": "(G21*13%)+(G22*13%)"
+      },
+      "B24": {
+        "value": "Total",
+        "formula": null
+      },
+      "D24": {
+        "value": "44.002199999999995",
+        "formula": "C23+D23"
+      },
+      "C27": {
+        "value": "Grand Total ",
+        "formula": null
+      },
+      "D27": {
+        "value": "99.93719999999999",
+        "formula": "D17+D24"
+      },
+      "F27": {
+        "value": "Total",
+        "formula": null
+      },
+      "G27": {
+        "value": "37.29",
+        "formula": "G21+G22+G23"
+      },
+      "B30": {
+        "value": "Unit Size",
+        "formula": null
+      },
+      "C30": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "D30": {
+        "value": "Regular",
+        "formula": null
+      },
+      "B31": {
+        "value": "5x5",
+        "formula": "G11"
+      },
+      "C31": {
+        "value": "99.93719999999999",
+        "formula": "D17+D24"
+      },
+      "D31": {
+        "value": "37.29",
+        "formula": "G27"
+      }
+    }
+  },
+  {
+    "name": " 75% 8 wks",
+    "cells": {
+      "F3": {
+        "value": "Quotation ",
+        "formula": null
+      },
+      "F4": {
+        "value": "8623 McCowan Road, Markham, ON, L3P 1M4",
+        "formula": null
+      },
+      "F5": {
+        "value": "647-249-8606",
+        "formula": null
+      },
+      "B8": {
+        "value": "10/10/2026",
+        "formula": null
+      },
+      "B10": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "C10": {
+        "value": "75% for 8 weeks ",
+        "formula": null
+      },
+      "F10": {
+        "value": "Floor ",
+        "formula": null
+      },
+      "G10": {
+        "value": "SecondFloor",
+        "formula": null
+      },
+      "B11": {
+        "value": "Recurring Charge",
+        "formula": null
+      },
+      "C11": {
+        "value": "Unit",
+        "formula": null
+      },
+      "D11": {
+        "value": "Insurance ",
+        "formula": null
+      },
+      "F11": {
+        "value": "Unit Size  ",
+        "formula": null
+      },
+      "G11": {
+        "value": "10x15",
+        "formula": null
+      },
+      "B12": {
+        "value": "Unit",
+        "formula": null
+      },
+      "C12": {
+        "value": "10x15",
+        "formula": "G11"
+      },
+      "D12": {
+        "value": "2 cycles",
+        "formula": null
+      },
+      "F12": {
+        "value": "Unit Price",
+        "formula": null
+      },
+      "G12": {
+        "value": "428",
+        "formula": null
+      },
+      "B13": {
+        "value": "Price (1 cycle)",
+        "formula": null
+      },
+      "C13": {
+        "value": "856",
+        "formula": "G12*2"
+      },
+      "D13": {
+        "value": "29.9",
+        "formula": null
+      },
+      "F13": {
+        "value": "Unit Price after Tax",
+        "formula": null
+      },
+      "G13": {
+        "value": "483.63999999999993",
+        "formula": "G12*113%"
+      },
+      "B14": {
+        "value": "Discounted (-)",
+        "formula": null
+      },
+      "C14": {
+        "value": "214",
+        "formula": "(G12*2)/100*25"
+      },
+      "F14": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G14": {
+        "value": "14.95",
+        "formula": null
+      },
+      "B15": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C15": {
+        "value": "27.82",
+        "formula": "(C14)*13%"
+      },
+      "D15": {
+        "value": "3.887",
+        "formula": "D13*13%"
+      },
+      "F15": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "G15": {
+        "value": "19.95",
+        "formula": null
+      },
+      "B16": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C16": {
+        "value": "241.82",
+        "formula": "C14+C15"
+      },
+      "D16": {
+        "value": "33.786999999999999",
+        "formula": "D13+D15"
+      },
+      "B17": {
+        "value": "Total",
+        "formula": null
+      },
+      "D17": {
+        "value": "275.60699999999997",
+        "formula": "C16+D16"
+      },
+      "J18": {
+        "value": " ",
+        "formula": null
+      },
+      "B20": {
+        "value": "One-Time Charge",
+        "formula": null
+      },
+      "C20": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "D20": {
+        "value": "Cylinder Lock",
+        "formula": null
+      },
+      "F20": {
+        "value": "After Promo",
+        "formula": null
+      },
+      "G20": {
+        "value": "Rate",
+        "formula": null
+      },
+      "B21": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "C21": {
+        "value": "19.95",
+        "formula": null
+      },
+      "D21": {
+        "value": "18.989999999999998",
+        "formula": null
+      },
+      "F21": {
+        "value": "Rent",
+        "formula": null
+      },
+      "G21": {
+        "value": "428",
+        "formula": "G12"
+      },
+      "B22": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C22": {
+        "value": "2.5935000000000001",
+        "formula": "(C21)*13%"
+      },
+      "D22": {
+        "value": "2.4686999999999997",
+        "formula": "D21*13%"
+      },
+      "F22": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G22": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "B23": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C23": {
+        "value": "22.543499999999998",
+        "formula": "C21+C22"
+      },
+      "D23": {
+        "value": "21.458699999999997",
+        "formula": "D21+D22"
+      },
+      "F23": {
+        "value": "tax ",
+        "formula": null
+      },
+      "G23": {
+        "value": "57.583500000000001",
+        "formula": "(G21*13%)+(G22*13%)"
+      },
+      "B24": {
+        "value": "Total",
+        "formula": null
+      },
+      "D24": {
+        "value": "44.002199999999995",
+        "formula": "C23+D23"
+      },
+      "C27": {
+        "value": "Grand Total ",
+        "formula": null
+      },
+      "D27": {
+        "value": "319.60919999999999",
+        "formula": "D17+D24"
+      },
+      "F27": {
+        "value": "Total",
+        "formula": null
+      },
+      "G27": {
+        "value": "500.5335",
+        "formula": "G21+G22+G23"
+      },
+      "B30": {
+        "value": "Unit Size",
+        "formula": null
+      },
+      "C30": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "D30": {
+        "value": "Regular",
+        "formula": null
+      },
+      "B31": {
+        "value": "10x15",
+        "formula": "G11"
+      },
+      "C31": {
+        "value": "319.60919999999999",
+        "formula": "D17+D24"
+      },
+      "D31": {
+        "value": "500.5335",
+        "formula": "G27"
+      }
+    }
+  },
+  {
+    "name": "Lock 70% off",
+    "cells": {
+      "F3": {
+        "value": "Quotation ",
+        "formula": null
+      },
+      "F4": {
+        "value": "8623 McCowan Road, Markham, ON, L3P 1M4",
+        "formula": null
+      },
+      "F5": {
+        "value": "647-249-8606",
+        "formula": null
+      },
+      "B10": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "C10": {
+        "value": "50% for 12 weeks ",
+        "formula": null
+      },
+      "F10": {
+        "value": "Floor ",
+        "formula": null
+      },
+      "G10": {
+        "value": "ForthFloor",
+        "formula": null
+      },
+      "B11": {
+        "value": "Recurring Charge",
+        "formula": null
+      },
+      "C11": {
+        "value": "Unit",
+        "formula": null
+      },
+      "D11": {
+        "value": "Insurance ",
+        "formula": null
+      },
+      "F11": {
+        "value": "Unit Size  ",
+        "formula": null
+      },
+      "G11": {
+        "value": "10x10",
+        "formula": null
+      },
+      "B12": {
+        "value": "Unit",
+        "formula": null
+      },
+      "C12": {
+        "value": "10x10",
+        "formula": "G11"
+      },
+      "D12": {
+        "value": "3 cycles",
+        "formula": null
+      },
+      "F12": {
+        "value": "Unit Price",
+        "formula": null
+      },
+      "G12": {
+        "value": "83",
+        "formula": null
+      },
+      "B13": {
+        "value": "Price (1 cycle)",
+        "formula": null
+      },
+      "C13": {
+        "value": "249",
+        "formula": "G12*3"
+      },
+      "D13": {
+        "value": "44.849999999999994",
+        "formula": "G14*3"
+      },
+      "F13": {
+        "value": "Unit Price after Tax",
+        "formula": null
+      },
+      "G13": {
+        "value": "93.789999999999992",
+        "formula": "G12*113%"
+      },
+      "B14": {
+        "value": "Discounted (-)",
+        "formula": null
+      },
+      "C14": {
+        "value": "124.5",
+        "formula": "(G12*3)/2"
+      },
+      "F14": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G14": {
+        "value": "14.95",
+        "formula": null
+      },
+      "B15": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C15": {
+        "value": "16.185000000000002",
+        "formula": "(C14)*13%"
+      },
+      "D15": {
+        "value": "5.8304999999999998",
+        "formula": "D13*13%"
+      },
+      "F15": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "G15": {
+        "value": "19.95",
+        "formula": null
+      },
+      "B16": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C16": {
+        "value": "140.685",
+        "formula": "C14+C15"
+      },
+      "D16": {
+        "value": "50.680499999999995",
+        "formula": "D13+D15"
+      },
+      "B17": {
+        "value": "Total",
+        "formula": null
+      },
+      "D17": {
+        "value": "191.3655",
+        "formula": "C16+D16"
+      },
+      "J18": {
+        "value": " ",
+        "formula": null
+      },
+      "B20": {
+        "value": "One-Time Charge",
+        "formula": null
+      },
+      "C20": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "D20": {
+        "value": "Cylinder Lock",
+        "formula": null
+      },
+      "F20": {
+        "value": "After Promo",
+        "formula": null
+      },
+      "G20": {
+        "value": "Rate",
+        "formula": null
+      },
+      "B21": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "C21": {
+        "value": "19.95",
+        "formula": null
+      },
+      "D21": {
+        "value": "37.979999999999997",
+        "formula": "18.99*2"
+      },
+      "F21": {
+        "value": "Rent",
+        "formula": null
+      },
+      "G21": {
+        "value": "83",
+        "formula": "G12"
+      },
+      "B22": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C22": {
+        "value": "2.5935000000000001",
+        "formula": "(C21)*13%"
+      },
+      "D22": {
+        "value": "4.9373999999999993",
+        "formula": "D21*13%"
+      },
+      "F22": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G22": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "B23": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C23": {
+        "value": "22.543499999999998",
+        "formula": "C21+C22"
+      },
+      "D23": {
+        "value": "42.917399999999994",
+        "formula": "D21+D22"
+      },
+      "F23": {
+        "value": "tax ",
+        "formula": null
+      },
+      "G23": {
+        "value": "12.733500000000001",
+        "formula": "(G21*13%)+(G22*13%)"
+      },
+      "B24": {
+        "value": "Discount",
+        "formula": null
+      },
+      "D24": {
+        "value": "8.583479999999998",
+        "formula": "D23/100*20"
+      },
+      "D25": {
+        "value": "34.333919999999992",
+        "formula": "D23-D24"
+      },
+      "B26": {
+        "value": "Total",
+        "formula": null
+      },
+      "D26": {
+        "value": "56.877419999999987",
+        "formula": "C23+D25"
+      },
+      "C29": {
+        "value": "Grand Total ",
+        "formula": null
+      },
+      "D29": {
+        "value": "248.24291999999997",
+        "formula": "D17+D26"
+      },
+      "F29": {
+        "value": "Total",
+        "formula": null
+      },
+      "G29": {
+        "value": "110.68350000000001",
+        "formula": "G21+G22+G23"
+      },
+      "B32": {
+        "value": "Unit Size",
+        "formula": null
+      },
+      "C32": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "D32": {
+        "value": "Regular",
+        "formula": null
+      },
+      "B33": {
+        "value": "10x10",
+        "formula": "G11"
+      },
+      "C33": {
+        "value": "248.24291999999997",
+        "formula": "D17+D26"
+      },
+      "D33": {
+        "value": "110.68350000000001",
+        "formula": "G29"
+      }
+    }
+  },
+  {
+    "name": "10% off",
+    "cells": {
+      "F3": {
+        "value": "Quotation ",
+        "formula": null
+      },
+      "F4": {
+        "value": "8623 McCowan Road, Markham, ON, L3P 1M4",
+        "formula": null
+      },
+      "F5": {
+        "value": "647-249-8606",
+        "formula": null
+      },
+      "B10": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "C10": {
+        "value": "5% off for 13 cycles ",
+        "formula": null
+      },
+      "F10": {
+        "value": "Floor ",
+        "formula": null
+      },
+      "G10": {
+        "value": "6thFloor",
+        "formula": null
+      },
+      "B11": {
+        "value": "Recurring Charge",
+        "formula": null
+      },
+      "C11": {
+        "value": "Unit",
+        "formula": null
+      },
+      "D11": {
+        "value": "Insurance ",
+        "formula": null
+      },
+      "F11": {
+        "value": "Unit Size  ",
+        "formula": null
+      },
+      "G11": {
+        "value": "10x5 ",
+        "formula": null
+      },
+      "B12": {
+        "value": "Unit",
+        "formula": null
+      },
+      "C12": {
+        "value": "10x5 ",
+        "formula": "G11"
+      },
+      "D12": {
+        "value": "13cycle",
+        "formula": null
+      },
+      "F12": {
+        "value": "Unit Price",
+        "formula": null
+      },
+      "G12": {
+        "value": "33",
+        "formula": null
+      },
+      "B13": {
+        "value": "Price (1 cycle)",
+        "formula": null
+      },
+      "C13": {
+        "value": "429",
+        "formula": "G12*13"
+      },
+      "D13": {
+        "value": "194.35",
+        "formula": "G14*13"
+      },
+      "F13": {
+        "value": "Unit Price after Tax",
+        "formula": null
+      },
+      "G13": {
+        "value": "37.29",
+        "formula": "G12*113%"
+      },
+      "B14": {
+        "value": "Discounted (-)",
+        "formula": null
+      },
+      "C14": {
+        "value": "386.1",
+        "formula": "(G12*13)*90%"
+      },
+      "F14": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G14": {
+        "value": "14.95",
+        "formula": null
+      },
+      "B15": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C15": {
+        "value": "50.193000000000005",
+        "formula": "(C14)*13%"
+      },
+      "D15": {
+        "value": "25.265499999999999",
+        "formula": "D13*13%"
+      },
+      "F15": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "G15": {
+        "value": "19.95",
+        "formula": null
+      },
+      "B16": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C16": {
+        "value": "436.29300000000001",
+        "formula": "C14+C15"
+      },
+      "D16": {
+        "value": "219.6155",
+        "formula": "D13+D15"
+      },
+      "B17": {
+        "value": "Total",
+        "formula": null
+      },
+      "D17": {
+        "value": "655.9085",
+        "formula": "C16+D16"
+      },
+      "B20": {
+        "value": "One-Time Charge",
+        "formula": null
+      },
+      "C20": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "D20": {
+        "value": "Cylinder Lock",
+        "formula": null
+      },
+      "F20": {
+        "value": "After Promo",
+        "formula": null
+      },
+      "G20": {
+        "value": "Rate",
+        "formula": null
+      },
+      "B21": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "C21": {
+        "value": "19.95",
+        "formula": null
+      },
+      "D21": {
+        "value": "18.989999999999998",
+        "formula": null
+      },
+      "F21": {
+        "value": "Rent",
+        "formula": null
+      },
+      "G21": {
+        "value": "33",
+        "formula": "G12"
+      },
+      "B22": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C22": {
+        "value": "2.5935000000000001",
+        "formula": "(C21)*13%"
+      },
+      "D22": {
+        "value": "2.4686999999999997",
+        "formula": "D21*13%"
+      },
+      "F22": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G22": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "B23": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C23": {
+        "value": "22.543499999999998",
+        "formula": "C21+C22"
+      },
+      "D23": {
+        "value": "21.458699999999997",
+        "formula": "D21+D22"
+      },
+      "F23": {
+        "value": "tax ",
+        "formula": null
+      },
+      "G23": {
+        "value": "6.2335000000000003",
+        "formula": "(G21*13%)+(G22*13%)"
+      },
+      "B24": {
+        "value": "Total",
+        "formula": null
+      },
+      "D24": {
+        "value": "44.002199999999995",
+        "formula": "C23+D23"
+      },
+      "C27": {
+        "value": "Grand Total ",
+        "formula": null
+      },
+      "D27": {
+        "value": "699.91070000000002",
+        "formula": "D17+D24"
+      },
+      "F27": {
+        "value": "Total",
+        "formula": null
+      },
+      "G27": {
+        "value": "54.183500000000002",
+        "formula": "G21+G22+G23"
+      },
+      "B30": {
+        "value": "Unit Size",
+        "formula": null
+      },
+      "C30": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "D30": {
+        "value": "Regular",
+        "formula": null
+      },
+      "B31": {
+        "value": "10x5 ",
+        "formula": "G11"
+      },
+      "C31": {
+        "value": "699.91070000000002",
+        "formula": "D27"
+      },
+      "D31": {
+        "value": "54.183500000000002",
+        "formula": "G27"
+      }
+    }
+  },
+  {
+    "name": "Regular Rent with Moving fees",
+    "cells": {
+      "F3": {
+        "value": "Quotation ",
+        "formula": null
+      },
+      "F4": {
+        "value": "8623 McCowan Road, Markham, ON, L3P 1M4",
+        "formula": null
+      },
+      "F5": {
+        "value": "647-249-8606",
+        "formula": null
+      },
+      "B10": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "C10": {
+        "value": "With Moving",
+        "formula": null
+      },
+      "F10": {
+        "value": "Floor ",
+        "formula": null
+      },
+      "G10": {
+        "value": "FifthFloor",
+        "formula": null
+      },
+      "B11": {
+        "value": "Recurring Charge",
+        "formula": null
+      },
+      "C11": {
+        "value": "Unit",
+        "formula": null
+      },
+      "D11": {
+        "value": "Insurance ",
+        "formula": null
+      },
+      "F11": {
+        "value": "Unit Size  ",
+        "formula": null
+      },
+      "G11": {
+        "value": "10x10",
+        "formula": null
+      },
+      "B12": {
+        "value": "Unit",
+        "formula": null
+      },
+      "C12": {
+        "value": "10x10",
+        "formula": "G11"
+      },
+      "D12": {
+        "value": "3 cycles",
+        "formula": null
+      },
+      "F12": {
+        "value": "Unit Price",
+        "formula": null
+      },
+      "G12": {
+        "value": "174",
+        "formula": null
+      },
+      "B13": {
+        "value": "Price (1 cycle)",
+        "formula": null
+      },
+      "C13": {
+        "value": "174",
+        "formula": "G12"
+      },
+      "D13": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "F13": {
+        "value": "Unit Price after Tax",
+        "formula": null
+      },
+      "G13": {
+        "value": "196.61999999999998",
+        "formula": "G12*113%"
+      },
+      "F14": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G14": {
+        "value": "14.95",
+        "formula": null
+      },
+      "B15": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C15": {
+        "value": "22.62",
+        "formula": "C13*13%"
+      },
+      "D15": {
+        "value": "1.9435",
+        "formula": "D13*13%"
+      },
+      "F15": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "G15": {
+        "value": "19.95",
+        "formula": null
+      },
+      "B16": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C16": {
+        "value": "196.62",
+        "formula": "C13+C15"
+      },
+      "D16": {
+        "value": "16.8935",
+        "formula": "D13+D15"
+      },
+      "B17": {
+        "value": "Total",
+        "formula": null
+      },
+      "D17": {
+        "value": "213.51349999999999",
+        "formula": "C16+D16"
+      },
+      "J18": {
+        "value": " ",
+        "formula": null
+      },
+      "B20": {
+        "value": "One-Time Charge",
+        "formula": null
+      },
+      "C20": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "D20": {
+        "value": "Cylinder Lock",
+        "formula": null
+      },
+      "F20": {
+        "value": "After Promo",
+        "formula": null
+      },
+      "G20": {
+        "value": "Rate",
+        "formula": null
+      },
+      "B21": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "C21": {
+        "value": "19.95",
+        "formula": null
+      },
+      "D21": {
+        "value": "18.989999999999998",
+        "formula": "18.99"
+      },
+      "F21": {
+        "value": "Rent",
+        "formula": null
+      },
+      "G21": {
+        "value": "174",
+        "formula": "G12"
+      },
+      "B22": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C22": {
+        "value": "2.5935000000000001",
+        "formula": "(C21)*13%"
+      },
+      "D22": {
+        "value": "2.4686999999999997",
+        "formula": "D21*13%"
+      },
+      "F22": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G22": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "B23": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C23": {
+        "value": "22.543499999999998",
+        "formula": "C21+C22"
+      },
+      "D23": {
+        "value": "21.458699999999997",
+        "formula": "D21+D22"
+      },
+      "F23": {
+        "value": "tax ",
+        "formula": null
+      },
+      "G23": {
+        "value": "24.563500000000001",
+        "formula": "(G21*13%)+(G22*13%)"
+      },
+      "B24": {
+        "value": "Total",
+        "formula": null
+      },
+      "D24": {
+        "value": "44.002199999999995",
+        "formula": "C23+D23"
+      },
+      "C27": {
+        "value": "Grand Total ",
+        "formula": null
+      },
+      "D27": {
+        "value": "257.51569999999998",
+        "formula": "D17+D24"
+      },
+      "F27": {
+        "value": "Total",
+        "formula": null
+      },
+      "G27": {
+        "value": "213.51349999999999",
+        "formula": "G21+G22+G23"
+      },
+      "B30": {
+        "value": "Moving Cost",
+        "formula": null
+      },
+      "C30": {
+        "value": "790",
+        "formula": "750+40"
+      },
+      "B31": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C31": {
+        "value": "102.7",
+        "formula": "SUM(C30*13%)"
+      },
+      "D31": {
+        "value": "892.7",
+        "formula": "SUM(C30:C31)"
+      },
+      "B33": {
+        "value": " Grand Total  with Moving ",
+        "formula": null
+      },
+      "D33": {
+        "value": "1150.2157",
+        "formula": "SUM(D27:D31)"
+      },
+      "D34": {
+        "value": " ",
+        "formula": null
+      }
+    }
+  },
+  {
+    "name": "Free Moving",
+    "cells": {
+      "F3": {
+        "value": "Quotation ",
+        "formula": null
+      },
+      "F4": {
+        "value": "8623 McCowan Road, Markham, ON, L3P 1M4",
+        "formula": null
+      },
+      "F5": {
+        "value": "647-249-8606",
+        "formula": null
+      },
+      "B10": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "C10": {
+        "value": "Free Moving",
+        "formula": null
+      },
+      "F10": {
+        "value": "Floor ",
+        "formula": null
+      },
+      "G10": {
+        "value": "6thFloor",
+        "formula": null
+      },
+      "B11": {
+        "value": "Recurring Charge",
+        "formula": null
+      },
+      "C11": {
+        "value": "Unit",
+        "formula": null
+      },
+      "D11": {
+        "value": "Insurance ",
+        "formula": null
+      },
+      "F11": {
+        "value": "Unit Size  ",
+        "formula": null
+      },
+      "G11": {
+        "value": "10x10",
+        "formula": null
+      },
+      "B12": {
+        "value": "Unit",
+        "formula": null
+      },
+      "C12": {
+        "value": "10x10",
+        "formula": "G11"
+      },
+      "D12": {
+        "value": "3 cycles",
+        "formula": null
+      },
+      "F12": {
+        "value": "Unit Price",
+        "formula": null
+      },
+      "G12": {
+        "value": "52",
+        "formula": null
+      },
+      "B13": {
+        "value": "Price (1 cycle)",
+        "formula": null
+      },
+      "C13": {
+        "value": "260",
+        "formula": "G12*5"
+      },
+      "D13": {
+        "value": "74.75",
+        "formula": "G14*5"
+      },
+      "F13": {
+        "value": "Unit Price after Tax",
+        "formula": null
+      },
+      "G13": {
+        "value": "58.759999999999991",
+        "formula": "G12*113%"
+      },
+      "F14": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G14": {
+        "value": "14.95",
+        "formula": null
+      },
+      "B15": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C15": {
+        "value": "33.800000000000004",
+        "formula": "C13*13%"
+      },
+      "D15": {
+        "value": "9.7175000000000011",
+        "formula": "D13*13%"
+      },
+      "F15": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "G15": {
+        "value": "19.95",
+        "formula": null
+      },
+      "B16": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C16": {
+        "value": "293.8",
+        "formula": "C13+C15"
+      },
+      "D16": {
+        "value": "84.467500000000001",
+        "formula": "D13+D15"
+      },
+      "B17": {
+        "value": "Total",
+        "formula": null
+      },
+      "D17": {
+        "value": "378.26750000000004",
+        "formula": "C16+D16"
+      },
+      "J18": {
+        "value": " ",
+        "formula": null
+      },
+      "B20": {
+        "value": "One-Time Charge",
+        "formula": null
+      },
+      "C20": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "D20": {
+        "value": "Cylinder Lock",
+        "formula": null
+      },
+      "F20": {
+        "value": "After Promo",
+        "formula": null
+      },
+      "G20": {
+        "value": "Rate",
+        "formula": null
+      },
+      "B21": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "C21": {
+        "value": "19.95",
+        "formula": null
+      },
+      "D21": {
+        "value": "18.989999999999998",
+        "formula": "18.99"
+      },
+      "F21": {
+        "value": "Rent",
+        "formula": null
+      },
+      "G21": {
+        "value": "52",
+        "formula": "G12"
+      },
+      "B22": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C22": {
+        "value": "2.5935000000000001",
+        "formula": "(C21)*13%"
+      },
+      "D22": {
+        "value": "2.4686999999999997",
+        "formula": "D21*13%"
+      },
+      "F22": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G22": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "B23": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C23": {
+        "value": "22.543499999999998",
+        "formula": "C21+C22"
+      },
+      "D23": {
+        "value": "21.458699999999997",
+        "formula": "D21+D22"
+      },
+      "F23": {
+        "value": "tax ",
+        "formula": null
+      },
+      "G23": {
+        "value": "8.7035",
+        "formula": "(G21*13%)+(G22*13%)"
+      },
+      "B24": {
+        "value": "Total",
+        "formula": null
+      },
+      "D24": {
+        "value": "44.002199999999995",
+        "formula": "C23+D23"
+      },
+      "C27": {
+        "value": "Grand Total ",
+        "formula": null
+      },
+      "D27": {
+        "value": "422.26970000000006",
+        "formula": "D17+D24"
+      },
+      "F27": {
+        "value": "Total",
+        "formula": null
+      },
+      "G27": {
+        "value": "75.653500000000008",
+        "formula": "G21+G22+G23"
+      },
+      "B30": {
+        "value": "Moving Cost",
+        "formula": null
+      },
+      "C30": {
+        "value": "39.99",
+        "formula": null
+      },
+      "B31": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C31": {
+        "value": "5.1987000000000005",
+        "formula": "SUM(C30*13%)"
+      },
+      "D31": {
+        "value": "45.188700000000004",
+        "formula": "SUM(C30:C31)"
+      },
+      "B33": {
+        "value": " Grand Total on the 12 WEEKS PROMO with Moving ",
+        "formula": null
+      },
+      "D33": {
+        "value": "467.45840000000004",
+        "formula": "SUM(D27:D31)"
+      }
+    }
+  },
+  {
+    "name": "4 weeks 50% with Moving",
+    "cells": {
+      "F3": {
+        "value": "Quotation ",
+        "formula": null
+      },
+      "F4": {
+        "value": "8623 McCowan Road, Markham, ON, L3P 1M4",
+        "formula": null
+      },
+      "F5": {
+        "value": "647-249-8606",
+        "formula": null
+      },
+      "B10": {
+        "value": "Quotation for the 4 weeks 50% OFF promo with Moving ",
+        "formula": null
+      },
+      "F10": {
+        "value": "Floor ",
+        "formula": null
+      },
+      "G10": {
+        "value": "ThirdFloor",
+        "formula": null
+      },
+      "B11": {
+        "value": "Recurring Charge",
+        "formula": null
+      },
+      "C11": {
+        "value": "Unit",
+        "formula": null
+      },
+      "D11": {
+        "value": "Insurance ",
+        "formula": null
+      },
+      "F11": {
+        "value": "Unit Size  ",
+        "formula": null
+      },
+      "G11": {
+        "value": "10x10",
+        "formula": null
+      },
+      "B12": {
+        "value": "Unit",
+        "formula": null
+      },
+      "C12": {
+        "value": "10x10",
+        "formula": "G11"
+      },
+      "D12": {
+        "value": "1 cycle",
+        "formula": null
+      },
+      "F12": {
+        "value": "Unit Price",
+        "formula": null
+      },
+      "G12": {
+        "value": "155",
+        "formula": null
+      },
+      "B13": {
+        "value": "Price (1 cycle)",
+        "formula": null
+      },
+      "C13": {
+        "value": "155",
+        "formula": "G12"
+      },
+      "D13": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "F13": {
+        "value": "Unit Price after Tax",
+        "formula": null
+      },
+      "G13": {
+        "value": "175.14999999999998",
+        "formula": "G12*113%"
+      },
+      "B14": {
+        "value": "Discounted (-)",
+        "formula": null
+      },
+      "C14": {
+        "value": "77.5",
+        "formula": "G12/2"
+      },
+      "F14": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G14": {
+        "value": "14.95",
+        "formula": null
+      },
+      "B15": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C15": {
+        "value": "10.075000000000001",
+        "formula": "(C14)*13%"
+      },
+      "D15": {
+        "value": "1.9435",
+        "formula": "D13*13%"
+      },
+      "F15": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "G15": {
+        "value": "19.95",
+        "formula": null
+      },
+      "B16": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C16": {
+        "value": "87.575000000000003",
+        "formula": "C14+C15"
+      },
+      "D16": {
+        "value": "16.8935",
+        "formula": "D13+D15"
+      },
+      "B17": {
+        "value": "Total",
+        "formula": null
+      },
+      "D17": {
+        "value": "104.46850000000001",
+        "formula": "C16+D16"
+      },
+      "B20": {
+        "value": "One-Time Charge",
+        "formula": null
+      },
+      "C20": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "D20": {
+        "value": "Cylinder Lock",
+        "formula": null
+      },
+      "F20": {
+        "value": "After Promo",
+        "formula": null
+      },
+      "G20": {
+        "value": "Rate",
+        "formula": null
+      },
+      "B21": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "C21": {
+        "value": "19.95",
+        "formula": null
+      },
+      "D21": {
+        "value": "18.989999999999998",
+        "formula": null
+      },
+      "F21": {
+        "value": "Rent",
+        "formula": null
+      },
+      "G21": {
+        "value": "155",
+        "formula": "G12"
+      },
+      "B22": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C22": {
+        "value": "2.5935000000000001",
+        "formula": "(C21)*13%"
+      },
+      "D22": {
+        "value": "2.4686999999999997",
+        "formula": "D21*13%"
+      },
+      "F22": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G22": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "B23": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C23": {
+        "value": "22.543499999999998",
+        "formula": "C21+C22"
+      },
+      "D23": {
+        "value": "21.458699999999997",
+        "formula": "D21+D22"
+      },
+      "F23": {
+        "value": "tax ",
+        "formula": null
+      },
+      "G23": {
+        "value": "22.093500000000002",
+        "formula": "(G21*13%)+(G22*13%)"
+      },
+      "B24": {
+        "value": "Total",
+        "formula": null
+      },
+      "D24": {
+        "value": "44.002199999999995",
+        "formula": "C23+D23"
+      },
+      "B26": {
+        "value": " Total on the 4 WEEKS PROMO ",
+        "formula": null
+      },
+      "D26": {
+        "value": "148.47069999999999",
+        "formula": "D17+D24"
+      },
+      "F26": {
+        "value": "Total",
+        "formula": null
+      },
+      "G26": {
+        "value": "192.04349999999999",
+        "formula": "G21+G22+G23"
+      },
+      "B28": {
+        "value": "Moving Cost",
+        "formula": null
+      },
+      "C28": {
+        "value": "790",
+        "formula": null
+      },
+      "B29": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C29": {
+        "value": "102.7",
+        "formula": "SUM(C28*13%)"
+      },
+      "D29": {
+        "value": "892.7",
+        "formula": "SUM(C28:C29)"
+      },
+      "B31": {
+        "value": " Grand Total on the 4 WEEKS PROMO with Moving ",
+        "formula": null
+      },
+      "D31": {
+        "value": "1041.1707000000001",
+        "formula": "SUM(D26:D29)"
+      }
+    }
+  },
+  {
+    "name": "8 weeks 50% with Moving",
+    "cells": {
+      "F3": {
+        "value": "Quotation ",
+        "formula": null
+      },
+      "F4": {
+        "value": "8623 McCowan Road, Markham, ON, L3P 1M4",
+        "formula": null
+      },
+      "F5": {
+        "value": "647-249-8606",
+        "formula": null
+      },
+      "B10": {
+        "value": "Quotation for the 8 weeks 50% OFF promo with Moving ",
+        "formula": null
+      },
+      "F10": {
+        "value": "Floor ",
+        "formula": null
+      },
+      "G10": {
+        "value": "ThirdFloor",
+        "formula": null
+      },
+      "B11": {
+        "value": "Recurring Charge",
+        "formula": null
+      },
+      "C11": {
+        "value": "Unit",
+        "formula": null
+      },
+      "D11": {
+        "value": "Insurance ",
+        "formula": null
+      },
+      "F11": {
+        "value": "Unit Size  ",
+        "formula": null
+      },
+      "G11": {
+        "value": "5x5",
+        "formula": null
+      },
+      "B12": {
+        "value": "Unit",
+        "formula": null
+      },
+      "C12": {
+        "value": "5x5",
+        "formula": "G11"
+      },
+      "D12": {
+        "value": "2 cycles",
+        "formula": null
+      },
+      "F12": {
+        "value": "Unit Price",
+        "formula": null
+      },
+      "G12": {
+        "value": "98",
+        "formula": null
+      },
+      "B13": {
+        "value": "Price (1 cycle)",
+        "formula": null
+      },
+      "C13": {
+        "value": "196",
+        "formula": "G12*2"
+      },
+      "D13": {
+        "value": "29.9",
+        "formula": "G14*2"
+      },
+      "F13": {
+        "value": "Unit Price after Tax",
+        "formula": null
+      },
+      "G13": {
+        "value": "110.74",
+        "formula": "G12*113%"
+      },
+      "B14": {
+        "value": "Discounted (-)",
+        "formula": null
+      },
+      "C14": {
+        "value": "98",
+        "formula": "(G12*2)/2"
+      },
+      "F14": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G14": {
+        "value": "14.95",
+        "formula": null
+      },
+      "B15": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C15": {
+        "value": "12.74",
+        "formula": "(C14)*13%"
+      },
+      "D15": {
+        "value": "3.887",
+        "formula": "D13*13%"
+      },
+      "F15": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "G15": {
+        "value": "19.95",
+        "formula": null
+      },
+      "B16": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C16": {
+        "value": "110.74",
+        "formula": "C14+C15"
+      },
+      "D16": {
+        "value": "33.786999999999999",
+        "formula": "D13+D15"
+      },
+      "B17": {
+        "value": "Total",
+        "formula": null
+      },
+      "D17": {
+        "value": "144.52699999999999",
+        "formula": "C16+D16"
+      },
+      "B20": {
+        "value": "One-Time Charge",
+        "formula": null
+      },
+      "C20": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "D20": {
+        "value": "Cylinder Lock",
+        "formula": null
+      },
+      "F20": {
+        "value": "After Promo",
+        "formula": null
+      },
+      "G20": {
+        "value": "Rate",
+        "formula": null
+      },
+      "B21": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "C21": {
+        "value": "19.95",
+        "formula": null
+      },
+      "D21": {
+        "value": "18.989999999999998",
+        "formula": null
+      },
+      "F21": {
+        "value": "Rent",
+        "formula": null
+      },
+      "G21": {
+        "value": "98",
+        "formula": "G12"
+      },
+      "B22": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C22": {
+        "value": "2.5935000000000001",
+        "formula": "(C21)*13%"
+      },
+      "D22": {
+        "value": "2.4686999999999997",
+        "formula": "D21*13%"
+      },
+      "F22": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G22": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "B23": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C23": {
+        "value": "22.543499999999998",
+        "formula": "C21+C22"
+      },
+      "D23": {
+        "value": "21.458699999999997",
+        "formula": "D21+D22"
+      },
+      "F23": {
+        "value": "tax ",
+        "formula": null
+      },
+      "G23": {
+        "value": "14.6835",
+        "formula": "(G21*13%)+(G22*13%)"
+      },
+      "B24": {
+        "value": "Total",
+        "formula": null
+      },
+      "D24": {
+        "value": "44.002199999999995",
+        "formula": "C23+D23"
+      },
+      "B26": {
+        "value": " Total on the 8 WEEKS PROMO ",
+        "formula": null
+      },
+      "D26": {
+        "value": "188.52919999999997",
+        "formula": "D17+D24"
+      },
+      "F26": {
+        "value": "Total",
+        "formula": null
+      },
+      "G26": {
+        "value": "127.6335",
+        "formula": "G21+G22+G23"
+      },
+      "B28": {
+        "value": "Moving Cost",
+        "formula": null
+      },
+      "C28": {
+        "value": "400",
+        "formula": null
+      },
+      "B29": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C29": {
+        "value": "52",
+        "formula": "SUM(C28*13%)"
+      },
+      "D29": {
+        "value": "452",
+        "formula": "SUM(C28:C29)"
+      },
+      "B31": {
+        "value": " Grand Total on the 12 WEEKS PROMO with Moving ",
+        "formula": null
+      },
+      "D31": {
+        "value": "640.52919999999995",
+        "formula": "SUM(D26:D29)"
+      }
+    }
+  },
+  {
+    "name": "12 weeks 50% with Moving",
+    "cells": {
+      "F3": {
+        "value": "Quotation ",
+        "formula": null
+      },
+      "F4": {
+        "value": "8623 McCowan Road, Markham, ON, L3P 1M4",
+        "formula": null
+      },
+      "F5": {
+        "value": "647-249-8606",
+        "formula": null
+      },
+      "B10": {
+        "value": "Quotation for the 12 weeks 50% OFF promo with Moving ",
+        "formula": null
+      },
+      "F10": {
+        "value": "Floor ",
+        "formula": null
+      },
+      "G10": {
+        "value": "6thFloor",
+        "formula": null
+      },
+      "B11": {
+        "value": "Recurring Charge",
+        "formula": null
+      },
+      "C11": {
+        "value": "Unit",
+        "formula": null
+      },
+      "D11": {
+        "value": "Insurance ",
+        "formula": null
+      },
+      "F11": {
+        "value": "Unit Size  ",
+        "formula": null
+      },
+      "G11": {
+        "value": "5x5",
+        "formula": null
+      },
+      "B12": {
+        "value": "Unit",
+        "formula": null
+      },
+      "C12": {
+        "value": "Unit Size  ",
+        "formula": "F11"
+      },
+      "D12": {
+        "value": "3 cycles",
+        "formula": null
+      },
+      "F12": {
+        "value": "Unit Price",
+        "formula": null
+      },
+      "G12": {
+        "value": "145",
+        "formula": null
+      },
+      "B13": {
+        "value": "Price (1 cycle)",
+        "formula": null
+      },
+      "C13": {
+        "value": "435",
+        "formula": "G12*3"
+      },
+      "D13": {
+        "value": "44.849999999999994",
+        "formula": "G14*3"
+      },
+      "F13": {
+        "value": "Unit Price after Tax",
+        "formula": null
+      },
+      "G13": {
+        "value": "163.85",
+        "formula": "G12*113%"
+      },
+      "B14": {
+        "value": "Discounted (-)",
+        "formula": null
+      },
+      "C14": {
+        "value": "217.5",
+        "formula": "(G12*3)/2"
+      },
+      "F14": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G14": {
+        "value": "14.95",
+        "formula": null
+      },
+      "B15": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C15": {
+        "value": "28.275000000000002",
+        "formula": "(C14)*13%"
+      },
+      "D15": {
+        "value": "5.8304999999999998",
+        "formula": "D13*13%"
+      },
+      "F15": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "G15": {
+        "value": "19.95",
+        "formula": null
+      },
+      "B16": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C16": {
+        "value": "245.77500000000001",
+        "formula": "C14+C15"
+      },
+      "D16": {
+        "value": "50.680499999999995",
+        "formula": "D13+D15"
+      },
+      "B17": {
+        "value": "Total",
+        "formula": null
+      },
+      "D17": {
+        "value": "296.45550000000003",
+        "formula": "C16+D16"
+      },
+      "J18": {
+        "value": " ",
+        "formula": null
+      },
+      "B20": {
+        "value": "One-Time Charge",
+        "formula": null
+      },
+      "C20": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "D20": {
+        "value": "Cylinder Lock",
+        "formula": null
+      },
+      "F20": {
+        "value": "After Promo",
+        "formula": null
+      },
+      "G20": {
+        "value": "Rate",
+        "formula": null
+      },
+      "I20": {
+        "value": "1152",
+        "formula": "96*12"
+      },
+      "J20": {
+        "value": "1301.76",
+        "formula": null
+      },
+      "B21": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "C21": {
+        "value": "19.95",
+        "formula": null
+      },
+      "D21": {
+        "value": "18.989999999999998",
+        "formula": null
+      },
+      "F21": {
+        "value": "Rent",
+        "formula": null
+      },
+      "G21": {
+        "value": "145",
+        "formula": "G12"
+      },
+      "J21": {
+        "value": "202.68",
+        "formula": null
+      },
+      "B22": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C22": {
+        "value": "2.5935000000000001",
+        "formula": "(C21)*13%"
+      },
+      "D22": {
+        "value": "2.4686999999999997",
+        "formula": "D21*13%"
+      },
+      "F22": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G22": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "B23": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C23": {
+        "value": "22.543499999999998",
+        "formula": "C21+C22"
+      },
+      "D23": {
+        "value": "21.458699999999997",
+        "formula": "D21+D22"
+      },
+      "F23": {
+        "value": "tax ",
+        "formula": null
+      },
+      "G23": {
+        "value": "20.793500000000002",
+        "formula": "(G21*13%)+(G22*13%)"
+      },
+      "B24": {
+        "value": "Total",
+        "formula": null
+      },
+      "D24": {
+        "value": "44.002199999999995",
+        "formula": "C23+D23"
+      },
+      "B26": {
+        "value": " Total on the 12 WEEKS PROMO ",
+        "formula": null
+      },
+      "D26": {
+        "value": "340.45770000000005",
+        "formula": "D17+D24"
+      },
+      "F26": {
+        "value": "Total",
+        "formula": null
+      },
+      "G26": {
+        "value": "180.74349999999998",
+        "formula": "G21+G22+G23"
+      },
+      "B28": {
+        "value": "Moving Cost",
+        "formula": null
+      },
+      "C28": {
+        "value": "500",
+        "formula": null
+      },
+      "B29": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C29": {
+        "value": "65",
+        "formula": "SUM(C28*13%)"
+      },
+      "D29": {
+        "value": "565",
+        "formula": "SUM(C28:C29)"
+      },
+      "B31": {
+        "value": " Grand Total on the 12 WEEKS PROMO with Moving ",
+        "formula": null
+      },
+      "D31": {
+        "value": "905.45770000000005",
+        "formula": "SUM(D26:D29)"
+      }
+    }
+  },
+  {
+    "name": "12 weeks - BF",
+    "cells": {
+      "F3": {
+        "value": "Quotation ",
+        "formula": null
+      },
+      "F4": {
+        "value": "8623 McCowan Road, Markham, ON, L3P 1M4",
+        "formula": null
+      },
+      "F5": {
+        "value": "647-249-8606",
+        "formula": null
+      },
+      "B10": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "C10": {
+        "value": "50% for 12 weeks ",
+        "formula": null
+      },
+      "F10": {
+        "value": "Floor ",
+        "formula": null
+      },
+      "G10": {
+        "value": "ForthFloor",
+        "formula": null
+      },
+      "B11": {
+        "value": "Recurring Charge",
+        "formula": null
+      },
+      "C11": {
+        "value": "Unit",
+        "formula": null
+      },
+      "D11": {
+        "value": "Insurance ",
+        "formula": null
+      },
+      "F11": {
+        "value": "Unit Size  ",
+        "formula": null
+      },
+      "G11": {
+        "value": "10x5",
+        "formula": null
+      },
+      "B12": {
+        "value": "Unit",
+        "formula": null
+      },
+      "C12": {
+        "value": "10x5",
+        "formula": "G11"
+      },
+      "D12": {
+        "value": "3 cycles",
+        "formula": null
+      },
+      "F12": {
+        "value": "Unit Price",
+        "formula": null
+      },
+      "G12": {
+        "value": "80",
+        "formula": null
+      },
+      "B13": {
+        "value": "Price (1 cycle)",
+        "formula": null
+      },
+      "C13": {
+        "value": "240",
+        "formula": "G12*3"
+      },
+      "D13": {
+        "value": "44.849999999999994",
+        "formula": "G14*3"
+      },
+      "F13": {
+        "value": "Unit Price after Tax",
+        "formula": null
+      },
+      "G13": {
+        "value": "90.399999999999991",
+        "formula": "G12*113%"
+      },
+      "B14": {
+        "value": "Discounted (-)",
+        "formula": null
+      },
+      "C14": {
+        "value": "120",
+        "formula": "(G12*3)/2"
+      },
+      "F14": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G14": {
+        "value": "14.95",
+        "formula": null
+      },
+      "B15": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C15": {
+        "value": "15.600000000000001",
+        "formula": "(C14)*13%"
+      },
+      "D15": {
+        "value": "5.8304999999999998",
+        "formula": "D13*13%"
+      },
+      "F15": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "G15": {
+        "value": "0",
+        "formula": null
+      },
+      "B16": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C16": {
+        "value": "135.6",
+        "formula": "C14+C15"
+      },
+      "D16": {
+        "value": "50.680499999999995",
+        "formula": "D13+D15"
+      },
+      "B17": {
+        "value": "Total",
+        "formula": null
+      },
+      "D17": {
+        "value": "186.28049999999999",
+        "formula": "C16+D16"
+      },
+      "B20": {
+        "value": "One-Time Charge",
+        "formula": null
+      },
+      "C20": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "D20": {
+        "value": "Cylinder Lock",
+        "formula": null
+      },
+      "F20": {
+        "value": "After Promo",
+        "formula": null
+      },
+      "G20": {
+        "value": "Rate",
+        "formula": null
+      },
+      "B21": {
+        "value": "Administrative Fee",
+        "formula": null
+      },
+      "C21": {
+        "value": "19.95",
+        "formula": null
+      },
+      "D21": {
+        "value": "18.989999999999998",
+        "formula": null
+      },
+      "F21": {
+        "value": "Rent",
+        "formula": null
+      },
+      "G21": {
+        "value": "80",
+        "formula": null
+      },
+      "B22": {
+        "value": "Tax",
+        "formula": null
+      },
+      "C22": {
+        "value": "2.5935000000000001",
+        "formula": "(C21)*13%"
+      },
+      "D22": {
+        "value": "2.4686999999999997",
+        "formula": "D21*13%"
+      },
+      "F22": {
+        "value": "Insurance",
+        "formula": null
+      },
+      "G22": {
+        "value": "14.95",
+        "formula": "G14"
+      },
+      "B23": {
+        "value": "sub-total",
+        "formula": null
+      },
+      "C23": {
+        "value": "22.543499999999998",
+        "formula": "C21+C22"
+      },
+      "D23": {
+        "value": "21.458699999999997",
+        "formula": "D21+D22"
+      },
+      "F23": {
+        "value": "tax ",
+        "formula": null
+      },
+      "G23": {
+        "value": "12.343500000000001",
+        "formula": "(G21*13%)+(G22*13%)"
+      },
+      "B24": {
+        "value": "Total",
+        "formula": null
+      },
+      "D24": {
+        "value": "44.002199999999995",
+        "formula": "C23+D23"
+      },
+      "C27": {
+        "value": "Grand Total ",
+        "formula": null
+      },
+      "D27": {
+        "value": "230.28269999999998",
+        "formula": "D17+D24"
+      },
+      "F27": {
+        "value": "Total",
+        "formula": null
+      },
+      "G27": {
+        "value": "107.29350000000001",
+        "formula": "G21+G22+G23"
+      },
+      "B30": {
+        "value": "Unit Size",
+        "formula": null
+      },
+      "C30": {
+        "value": "Promotion",
+        "formula": null
+      },
+      "D30": {
+        "value": "Regular",
+        "formula": null
+      },
+      "B31": {
+        "value": "10x5",
+        "formula": "G11"
+      },
+      "C31": {
+        "value": "230.28269999999998",
+        "formula": "D27"
+      },
+      "D31": {
+        "value": "107.29350000000001",
+        "formula": "G27"
+      }
+    }
+  },
+  {
+    "name": "Whole",
+    "cells": {
+      "A3": {
+        "value": "Floor ",
+        "formula": null
+      },
+      "C3": {
+        "value": "G/F",
+        "formula": null
+      },
+      "F3": {
+        "value": "2/F",
+        "formula": null
+      },
+      "I3": {
+        "value": "3/F",
+        "formula": null
+      },
+      "L3": {
+        "value": "4/F",
+        "formula": null
+      },
+      "A4": {
+        "value": "Ground",
+        "formula": null
+      },
+      "C4": {
+        "value": "Unit Size",
+        "formula": null
+      },
+      "D4": {
+        "value": "Values",
+        "formula": null
+      },
+      "F4": {
+        "value": "Unit Size",
+        "formula": null
+      },
+      "G4": {
+        "value": "Values",
+        "formula": null
+      },
+      "I4": {
+        "value": "Unit Size",
+        "formula": null
+      },
+      "J4": {
+        "value": "Values",
+        "formula": null
+      },
+      "L4": {
+        "value": "Unit Size",
+        "formula": null
+      },
+      "M4": {
+        "value": "Values",
+        "formula": null
+      },
+      "A5": {
+        "value": "SecondFloor",
+        "formula": null
+      },
+      "C5": {
+        "value": "5x5",
+        "formula": null
+      },
+      "D5": {
+        "value": "113",
+        "formula": null
+      },
+      "F5": {
+        "value": "5x5",
+        "formula": null
+      },
+      "G5": {
+        "value": "103",
+        "formula": null
+      },
+      "I5": {
+        "value": "5x5",
+        "formula": null
+      },
+      "J5": {
+        "value": "103",
+        "formula": null
+      },
+      "L5": {
+        "value": "5x5",
+        "formula": null
+      },
+      "M5": {
+        "value": "103",
+        "formula": null
+      },
+      "A6": {
+        "value": "ThirdFloor",
+        "formula": null
+      },
+      "C6": {
+        "value": "5x6",
+        "formula": null
+      },
+      "D6": {
+        "value": "133",
+        "formula": null
+      },
+      "F6": {
+        "value": "5x6",
+        "formula": null
+      },
+      "G6": {
+        "value": "120",
+        "formula": null
+      },
+      "I6": {
+        "value": "5x6",
+        "formula": null
+      },
+      "J6": {
+        "value": "120",
+        "formula": null
+      },
+      "L6": {
+        "value": "5x6",
+        "formula": null
+      },
+      "M6": {
+        "value": "120",
+        "formula": null
+      },
+      "A7": {
+        "value": "ForthFloor",
+        "formula": null
+      },
+      "C7": {
+        "value": "5x9",
+        "formula": null
+      },
+      "D7": {
+        "value": "150",
+        "formula": null
+      },
+      "F7": {
+        "value": "5x10",
+        "formula": null
+      },
+      "G7": {
+        "value": "130",
+        "formula": null
+      },
+      "I7": {
+        "value": "5x10",
+        "formula": null
+      },
+      "J7": {
+        "value": "130",
+        "formula": null
+      },
+      "L7": {
+        "value": "5x10",
+        "formula": null
+      },
+      "M7": {
+        "value": "130",
+        "formula": null
+      },
+      "A8": {
+        "value": "FifthFloor",
+        "formula": null
+      },
+      "C8": {
+        "value": "5x10",
+        "formula": null
+      },
+      "D8": {
+        "value": "150",
+        "formula": null
+      },
+      "F8": {
+        "value": "10x5",
+        "formula": null
+      },
+      "G8": {
+        "value": "130",
+        "formula": null
+      },
+      "I8": {
+        "value": "10x5",
+        "formula": null
+      },
+      "J8": {
+        "value": "71",
+        "formula": null
+      },
+      "L8": {
+        "value": "10x5",
+        "formula": null
+      },
+      "M8": {
+        "value": "130",
+        "formula": null
+      },
+      "A9": {
+        "value": "6thFloor",
+        "formula": null
+      },
+      "C9": {
+        "value": "10x5 ",
+        "formula": null
+      },
+      "D9": {
+        "value": "150",
+        "formula": null
+      },
+      "F9": {
+        "value": "5x11",
+        "formula": null
+      },
+      "G9": {
+        "value": "156",
+        "formula": null
+      },
+      "I9": {
+        "value": "5x11",
+        "formula": null
+      },
+      "J9": {
+        "value": "156",
+        "formula": null
+      },
+      "L9": {
+        "value": "5x11",
+        "formula": null
+      },
+      "M9": {
+        "value": "156",
+        "formula": null
+      },
+      "C10": {
+        "value": "10x6",
+        "formula": null
+      },
+      "D10": {
+        "value": "176",
+        "formula": null
+      },
+      "F10": {
+        "value": "5x15",
+        "formula": null
+      },
+      "G10": {
+        "value": "193",
+        "formula": null
+      },
+      "I10": {
+        "value": "5x15",
+        "formula": null
+      },
+      "J10": {
+        "value": "193",
+        "formula": null
+      },
+      "L10": {
+        "value": "5x15",
+        "formula": null
+      },
+      "M10": {
+        "value": "193",
+        "formula": null
+      },
+      "C11": {
+        "value": "10x10",
+        "formula": null
+      },
+      "D11": {
+        "value": "253",
+        "formula": null
+      },
+      "F11": {
+        "value": "10x7.5",
+        "formula": null
+      },
+      "G11": {
+        "value": "193",
+        "formula": null
+      },
+      "I11": {
+        "value": "10x7.5",
+        "formula": null
+      },
+      "J11": {
+        "value": "193",
+        "formula": null
+      },
+      "L11": {
+        "value": "10x7.5",
+        "formula": null
+      },
+      "M11": {
+        "value": "193",
+        "formula": null
+      },
+      "C12": {
+        "value": "10x11",
+        "formula": null
+      },
+      "D12": {
+        "value": "176",
+        "formula": null
+      },
+      "F12": {
+        "value": "10x10",
+        "formula": null
+      },
+      "G12": {
+        "value": "224",
+        "formula": null
+      },
+      "I12": {
+        "value": "10x10",
+        "formula": null
+      },
+      "J12": {
+        "value": "224",
+        "formula": null
+      },
+      "L12": {
+        "value": "10x10",
+        "formula": null
+      },
+      "M12": {
+        "value": "224",
+        "formula": null
+      },
+      "C13": {
+        "value": "10x15",
+        "formula": null
+      },
+      "D13": {
+        "value": "381",
+        "formula": null
+      },
+      "F13": {
+        "value": "10x11",
+        "formula": null
+      },
+      "G13": {
+        "value": "147",
+        "formula": null
+      },
+      "I13": {
+        "value": "10x11",
+        "formula": null
+      },
+      "J13": {
+        "value": "226",
+        "formula": null
+      },
+      "L13": {
+        "value": "10x11",
+        "formula": null
+      },
+      "M13": {
+        "value": "226",
+        "formula": null
+      },
+      "C14": {
+        "value": "10x20",
+        "formula": null
+      },
+      "D14": {
+        "value": "545",
+        "formula": null
+      },
+      "F14": {
+        "value": "10x15",
+        "formula": null
+      },
+      "G14": {
+        "value": "324",
+        "formula": null
+      },
+      "I14": {
+        "value": "10x15",
+        "formula": null
+      },
+      "J14": {
+        "value": "324",
+        "formula": null
+      },
+      "L14": {
+        "value": "10x15",
+        "formula": null
+      },
+      "M14": {
+        "value": "324",
+        "formula": null
+      },
+      "C15": {
+        "value": "20x11",
+        "formula": null
+      },
+      "D15": {
+        "value": "582",
+        "formula": null
+      },
+      "F15": {
+        "value": "15x10",
+        "formula": null
+      },
+      "G15": {
+        "value": "324",
+        "formula": null
+      },
+      "I15": {
+        "value": "15x10",
+        "formula": null
+      },
+      "J15": {
+        "value": "324",
+        "formula": null
+      },
+      "L15": {
+        "value": "15x10",
+        "formula": null
+      },
+      "M15": {
+        "value": "324",
+        "formula": null
+      },
+      "C16": {
+        "value": "5x6 Pre",
+        "formula": null
+      },
+      "D16": {
+        "value": "129",
+        "formula": null
+      },
+      "F16": {
+        "value": "15x11",
+        "formula": null
+      },
+      "G16": {
+        "value": "385",
+        "formula": null
+      },
+      "I16": {
+        "value": "15x11",
+        "formula": null
+      },
+      "J16": {
+        "value": "385",
+        "formula": null
+      },
+      "L16": {
+        "value": "15x11",
+        "formula": null
+      },
+      "M16": {
+        "value": "385",
+        "formula": null
+      },
+      "C17": {
+        "value": "10x5 Pre",
+        "formula": null
+      },
+      "D17": {
+        "value": "156",
+        "formula": null
+      },
+      "F17": {
+        "value": "10x20",
+        "formula": null
+      },
+      "G17": {
+        "value": "447",
+        "formula": null
+      },
+      "I17": {
+        "value": "10x20",
+        "formula": null
+      },
+      "J17": {
+        "value": "447",
+        "formula": null
+      },
+      "L17": {
+        "value": "10x20",
+        "formula": null
+      },
+      "M17": {
+        "value": "447",
+        "formula": null
+      },
+      "C18": {
+        "value": "10x6 Pre",
+        "formula": null
+      },
+      "D18": {
+        "value": "178",
+        "formula": null
+      },
+      "F18": {
+        "value": "21x11",
+        "formula": null
+      },
+      "G18": {
+        "value": "568",
+        "formula": null
+      },
+      "I18": {
+        "value": "21x11",
+        "formula": null
+      },
+      "J18": {
+        "value": "568",
+        "formula": null
+      },
+      "C19": {
+        "value": "6x10 Pre",
+        "formula": null
+      },
+      "D19": {
+        "value": "178",
+        "formula": null
+      },
+      "C20": {
+        "value": "10x15 Pre",
+        "formula": null
+      },
+      "D20": {
+        "value": "388",
+        "formula": null
+      },
+      "C21": {
+        "value": "10x25 Pre",
+        "formula": null
+      },
+      "D21": {
+        "value": "725",
+        "formula": null
+      },
+      "G21": {
+        "value": "          ",
+        "formula": null
+      },
+      "C22": {
+        "value": "10x26 Pre",
+        "formula": null
+      },
+      "D22": {
+        "value": "724",
+        "formula": null
+      },
+      "C23": {
+        "value": "11x26 Pre",
+        "formula": null
+      },
+      "D23": {
+        "value": "744",
+        "formula": null
+      },
+      "C24": {
+        "value": "10x30 Pre",
+        "formula": null
+      },
+      "D24": {
+        "value": "792",
+        "formula": null
+      },
+      "C25": {
+        "value": "SkyLocker ",
+        "formula": null
+      },
+      "D25": {
+        "value": "26",
+        "formula": null
+      }
+    }
+  },
+  {
+    "name": "Quotation",
+    "cells": {
+      "D2": {
+        "value": "Vaultra",
+        "formula": null
+      },
+      "D3": {
+        "value": "8623 McCowan Road, Markham, ON, L3P 1M4",
+        "formula": null
+      },
+      "D4": {
+        "value": "Markham-McCowan@vaultra.ca",
+        "formula": null
+      },
+      "D5": {
+        "value": "647-249-8606",
+        "formula": null
+      },
+      "D9": {
+        "value": "Customer Info",
+        "formula": null
+      },
+      "D10": {
+        "value": "<Contact Name>",
+        "formula": null
+      },
+      "F10": {
+        "value": "Quote Date:",
+        "formula": null
+      },
+      "G10": {
+        "value": "45209",
+        "formula": null
+      },
+      "D11": {
+        "value": "<Client Company Name>",
+        "formula": null
+      },
+      "F11": {
+        "value": "Valid For:",
+        "formula": null
+      },
+      "G11": {
+        "value": "7 days",
+        "formula": null
+      },
+      "D12": {
+        "value": "<Address>",
+        "formula": null
+      },
+      "D13": {
+        "value": "<Phone, Email>",
+        "formula": null
+      },
+      "C15": {
+        "value": "Code",
+        "formula": null
+      },
+      "D15": {
+        "value": "Unit Size",
+        "formula": null
+      },
+      "F15": {
+        "value": "QTY",
+        "formula": null
+      },
+      "G15": {
+        "value": "UNIT PRICE",
+        "formula": null
+      },
+      "I15": {
+        "value": "TOTAL",
+        "formula": null
+      },
+      "C16": {
+        "value": "G510",
+        "formula": null
+      },
+      "D16": {
+        "value": "5 x 10",
+        "formula": "_xlfn.XLOOKUP(C16,UnitCode,UnitSize)"
+      },
+      "F16": {
+        "value": "1",
+        "formula": null
+      },
+      "G16": {
+        "value": "209",
+        "formula": "_xlfn.XLOOKUP(C16,UnitCode,Values)"
+      },
+      "I16": {
+        "value": "0",
+        "formula": "F16*H16"
+      },
+      "C17": {
+        "value": "G56",
+        "formula": null
+      },
+      "D17": {
+        "value": "5 x 6",
+        "formula": "_xlfn.XLOOKUP(C17,UnitCode,UnitSize)"
+      },
+      "F17": {
+        "value": "1",
+        "formula": null
+      },
+      "G17": {
+        "value": " ",
+        "formula": null
+      },
+      "I17": {
+        "value": "0",
+        "formula": "F17*H17"
+      },
+      "D18": {
+        "value": " ",
+        "formula": null
+      },
+      "I18": {
+        "value": "0",
+        "formula": "F18*H18"
+      },
+      "I19": {
+        "value": "0",
+        "formula": null
+      },
+      "I20": {
+        "value": "0",
+        "formula": null
+      },
+      "I21": {
+        "value": "0",
+        "formula": null
+      },
+      "I22": {
+        "value": "0",
+        "formula": null
+      },
+      "H23": {
+        "value": "SUBTOTAL",
+        "formula": null
+      },
+      "I23": {
+        "value": "0",
+        "formula": "SUM(I16:I22)"
+      },
+      "D24": {
+        "value": "  ",
+        "formula": null
+      },
+      "H24": {
+        "value": "DISCOUNT",
+        "formula": null
+      },
+      "I24": {
+        "value": "0",
+        "formula": null
+      },
+      "D25": {
+        "value": "Thank you for your business!",
+        "formula": null
+      },
+      "H25": {
+        "value": "SUBTOTAL LESS DISCOUNT",
+        "formula": null
+      },
+      "I25": {
+        "value": "0",
+        "formula": "I23-I24"
+      },
+      "H26": {
+        "value": "TAX RATE",
+        "formula": null
+      },
+      "I26": {
+        "value": "0",
+        "formula": null
+      },
+      "H27": {
+        "value": "TOTAL TAX",
+        "formula": null
+      },
+      "I27": {
+        "value": "0",
+        "formula": "I25*I26"
+      },
+      "H28": {
+        "value": "SHIPPING/HANDLING",
+        "formula": null
+      },
+      "I28": {
+        "value": "0",
+        "formula": null
+      },
+      "H29": {
+        "value": "Quote Total",
+        "formula": null
+      },
+      "I29": {
+        "value": "0",
+        "formula": "I25+I27+I28"
+      },
+      "D30": {
+        "value": " ",
+        "formula": null
+      },
+      "C31": {
+        "value": "Terms & Instructions",
+        "formula": null
+      },
+      "C32": {
+        "value": "payment requirements, deposit amount and payment method",
+        "formula": null
+      },
+      "C33": {
+        "value": "Terms, returns policy",
+        "formula": null
+      }
+    }
+  },
+  {
+    "name": "Data",
+    "cells": {
+      "A2": {
+        "value": "Floors",
+        "formula": null
+      },
+      "C2": {
+        "value": "UnitCode",
+        "formula": null
+      },
+      "D2": {
+        "value": "UnitSize",
+        "formula": null
+      },
+      "E2": {
+        "value": "Values",
+        "formula": null
+      },
+      "A3": {
+        "value": "G/F",
+        "formula": null
+      },
+      "C3": {
+        "value": "G55",
+        "formula": null
+      },
+      "D3": {
+        "value": "5 x 5",
+        "formula": null
+      },
+      "E3": {
+        "value": "119",
+        "formula": null
+      },
+      "A4": {
+        "value": "1/F",
+        "formula": null
+      },
+      "C4": {
+        "value": "G56",
+        "formula": null
+      },
+      "D4": {
+        "value": "5 x 6",
+        "formula": null
+      },
+      "E4": {
+        "value": "145",
+        "formula": null
+      },
+      "A5": {
+        "value": "2/F",
+        "formula": null
+      },
+      "C5": {
+        "value": "G59",
+        "formula": null
+      },
+      "D5": {
+        "value": "5 x 9",
+        "formula": null
+      },
+      "E5": {
+        "value": "175",
+        "formula": null
+      },
+      "A6": {
+        "value": "3/F",
+        "formula": null
+      },
+      "C6": {
+        "value": "G105",
+        "formula": null
+      },
+      "D6": {
+        "value": "10 x 5",
+        "formula": null
+      },
+      "E6": {
+        "value": "209",
+        "formula": null
+      },
+      "I6": {
+        "value": "unit code",
+        "formula": null
+      },
+      "J6": {
+        "value": "unit",
+        "formula": null
+      },
+      "K6": {
+        "value": "values",
+        "formula": null
+      },
+      "A7": {
+        "value": "4/F",
+        "formula": null
+      },
+      "C7": {
+        "value": "G510",
+        "formula": null
+      },
+      "D7": {
+        "value": "5 x 10",
+        "formula": null
+      },
+      "E7": {
+        "value": "209",
+        "formula": null
+      },
+      "I7": {
+        "value": "G55",
+        "formula": null
+      },
+      "J7": {
+        "value": "5 x 5",
+        "formula": "_xlfn.XLOOKUP(I7,UnitCode,UnitSize)"
+      },
+      "C8": {
+        "value": "G106",
+        "formula": null
+      },
+      "D8": {
+        "value": "10 x 6",
+        "formula": null
+      },
+      "E8": {
+        "value": "225",
+        "formula": null
+      },
+      "I8": {
+        "value": "G59",
+        "formula": null
+      },
+      "J8": {
+        "value": "5 x 9",
+        "formula": "_xlfn.XLOOKUP(I8,UnitCode,UnitSize)"
+      },
+      "C9": {
+        "value": "G1011",
+        "formula": null
+      },
+      "D9": {
+        "value": "10 x 11",
+        "formula": null
+      },
+      "E9": {
+        "value": "285",
+        "formula": null
+      },
+      "I9": {
+        "value": "G105P",
+        "formula": null
+      },
+      "J9": {
+        "value": "10 x 5 Pre",
+        "formula": "_xlfn.XLOOKUP(I9,UnitCode,UnitSize)"
+      },
+      "C10": {
+        "value": "G1015",
+        "formula": null
+      },
+      "D10": {
+        "value": "10 x 15",
+        "formula": null
+      },
+      "E10": {
+        "value": "359",
+        "formula": null
+      },
+      "J10": {
+        "value": "#N/A",
+        "formula": "_xlfn.XLOOKUP(I10,UnitCode,UnitSize)"
+      },
+      "C11": {
+        "value": "G1020",
+        "formula": null
+      },
+      "D11": {
+        "value": "10 x 20",
+        "formula": null
+      },
+      "E11": {
+        "value": "489",
+        "formula": null
+      },
+      "J11": {
+        "value": "#N/A",
+        "formula": "_xlfn.XLOOKUP(I11,UnitCode,UnitSize)"
+      },
+      "C12": {
+        "value": "G2011",
+        "formula": null
+      },
+      "D12": {
+        "value": "20 x 11",
+        "formula": null
+      },
+      "E12": {
+        "value": "499",
+        "formula": null
+      },
+      "J12": {
+        "value": "#N/A",
+        "formula": "_xlfn.XLOOKUP(I12,UnitCode,UnitSize)"
+      },
+      "C13": {
+        "value": "G56P",
+        "formula": null
+      },
+      "D13": {
+        "value": "5 x 6 Pre",
+        "formula": null
+      },
+      "E13": {
+        "value": "145",
+        "formula": null
+      },
+      "J13": {
+        "value": "#N/A",
+        "formula": "_xlfn.XLOOKUP(I13,UnitCode,UnitSize)"
+      },
+      "C14": {
+        "value": "G105P",
+        "formula": null
+      },
+      "D14": {
+        "value": "10 x 5 Pre",
+        "formula": null
+      },
+      "E14": {
+        "value": "209",
+        "formula": null
+      },
+      "J14": {
+        "value": "#N/A",
+        "formula": "_xlfn.XLOOKUP(I14,UnitCode,UnitSize)"
+      },
+      "C15": {
+        "value": "G106P",
+        "formula": null
+      },
+      "D15": {
+        "value": "10 x 6 Pre",
+        "formula": null
+      },
+      "E15": {
+        "value": "225",
+        "formula": null
+      },
+      "J15": {
+        "value": "#N/A",
+        "formula": "_xlfn.XLOOKUP(I15,UnitCode,UnitSize)"
+      },
+      "C16": {
+        "value": "G610P",
+        "formula": null
+      },
+      "D16": {
+        "value": "6 x 10 Pre",
+        "formula": null
+      },
+      "E16": {
+        "value": "225",
+        "formula": null
+      },
+      "J16": {
+        "value": "#N/A",
+        "formula": "_xlfn.XLOOKUP(I16,UnitCode,UnitSize)"
+      },
+      "C17": {
+        "value": "G1015P",
+        "formula": null
+      },
+      "D17": {
+        "value": "10 x 15 Pre",
+        "formula": null
+      },
+      "E17": {
+        "value": "359",
+        "formula": null
+      },
+      "C18": {
+        "value": "G1025P",
+        "formula": null
+      },
+      "D18": {
+        "value": "10 x 25 Pre",
+        "formula": null
+      },
+      "E18": {
+        "value": "625",
+        "formula": null
+      },
+      "C19": {
+        "value": "G1026P",
+        "formula": null
+      },
+      "D19": {
+        "value": "10 x 26 Pre",
+        "formula": null
+      },
+      "E19": {
+        "value": "635",
+        "formula": null
+      },
+      "C20": {
+        "value": "G1126P",
+        "formula": null
+      },
+      "D20": {
+        "value": "11 x 26 Pre",
+        "formula": null
+      },
+      "E20": {
+        "value": "635",
+        "formula": null
+      },
+      "C21": {
+        "value": "G1030P",
+        "formula": null
+      },
+      "D21": {
+        "value": "10 x 30 Pre",
+        "formula": null
+      },
+      "E21": {
+        "value": "789",
+        "formula": null
+      },
+      "C22": {
+        "value": "GSKY",
+        "formula": null
+      },
+      "D22": {
+        "value": "SkyLocker ",
+        "formula": null
+      },
+      "E22": {
+        "value": "29",
+        "formula": null
+      }
+    }
+  }
+]
