@@ -7,10 +7,11 @@ import { Textarea } from '@/components/ui/textarea';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Badge } from '@/components/ui/badge';
+import vaultraLogo from './assets/vaultra-logo.png';
 import { calculate, dateLabel, floors, legacyUnits, location, money, newQuote, presets, units, validate, validUntil, type Quote, type Unit } from './quote';
 
 function readStored<T>(key: string, fallback: T): T { try { const v = JSON.parse(localStorage.getItem(key) || 'null'); return v ?? fallback; } catch { return fallback; } }
-function Brand({ dark = false }: { dark?: boolean }) { return <div className={`brand ${dark ? 'brand-dark' : ''}`}><span className="brand-mark"><Box size={24} strokeWidth={1.8}/></span><span>vaultra<span className="brand-dot">.</span><small>STORAGE</small></span></div>; }
+function Brand({ dark = false }: { dark?: boolean }) { return <div className={`brand ${dark ? 'brand-dark' : ''}`}><img src={vaultraLogo} alt="Vaultra Storage — Store Canadian" width={664} height={136}/></div>; }
 function Field({ label, children, wide = false }: { label: string; children: ReactNode; wide?: boolean }) { return <div className={`field ${wide ? 'wide' : ''}`}><Label>{label}</Label>{children}</div>; }
 function SectionTitle({ number, title, description, icon }: { number: string; title: string; description: string; icon: ReactNode }) { return <div className="section-title"><span className="section-icon">{icon}</span><div><h2>{title}</h2><p>{description}</p></div><span className="section-number">{number}</span></div>; }
 
