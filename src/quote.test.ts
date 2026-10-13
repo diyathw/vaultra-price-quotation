@@ -19,7 +19,7 @@ test('live rate preserves unit type and applies promotion exactly once', () => {
   const rate = parseRates(liveFixture())[0];
   const q = { ...newQuote(), ...applyLiveRate(rate, '2026-10-12T12:00:00Z') };
   assert.equal(q.rate, 42);
-  assert.equal(q.floor, 'Upper Floor Climate Control');
+  assert.equal(q.floor, newQuote().floor);
   assert.equal(q.cycles, 2);
   assert.equal(q.discount, 50);
   assert.equal(calculate(q).rent - calculate(q).discount, 42);

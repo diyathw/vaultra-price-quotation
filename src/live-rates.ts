@@ -50,5 +50,5 @@ export async function fetchRates(): Promise<LiveRate[]> {
 }
 export function applyLiveRate(rate: LiveRate, fetchedAt: string): Partial<Quote> {
   if (rate.available < 1) throw new Error('This unit type is unavailable.');
-  return { unitId: rate.id, size: rate.size, floor: rate.type, rate: rate.regular, rateSource: `Online rate · checked ${new Date(fetchedAt).toLocaleString()}`, preset: 'custom', cycles: rate.cycles, discount: rate.discount };
+  return { unitId: rate.id, size: rate.size, rate: rate.regular, rateSource: `Online rate · ${rate.type} · checked ${new Date(fetchedAt).toLocaleString()}`, preset: 'custom', cycles: rate.cycles, discount: rate.discount };
 }
