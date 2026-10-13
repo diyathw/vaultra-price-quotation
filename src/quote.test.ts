@@ -2,6 +2,16 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { calculate, newQuote, validate, units, legacyUnits } from './quote';
 import { parseRates, applyLiveRate } from './live-rates';
+import { binPackages, movingExtras, movingRateFor } from './moving-rates';
+
+test('moving service rates include regular, promotion, premium and extras', () => {
+  assert.equal(movingRateFor('10 x 10', 'base'), 650);
+  assert.equal(movingRateFor('10x10', 'promotion'), 750);
+  assert.equal(movingRateFor('10x10', 'premium'), 750);
+  assert.equal(movingRateFor('unknown', 'base'), null);
+  assert.equal(movingExtras.stairs, 125);
+  assert.equal(binPackages[4].cycle, 60);
+});
 
 const liveFixture = (promotion: unknown = { name: '50% Off 8 Weeks', pricing: { monthly: '21.00' } }) => ({ billing_cycle_label: 'Every Four Weeks', insurance_included_in_price: 0, is_discount_enabled: true, sizes: { small: [{ dimensions: '5 x 5', types: [{ id: 21, unit_type: 'Upper Floor Climate Control', regular_pricing: { monthly: '42.00' }, unit_type_available: 17, promotion }] }] } });
 

@@ -28,6 +28,10 @@ The rate refresh is read-only. It never changes an existing quotation until the 
 - HST is calculated once on the rounded subtotal.
 - The recurring figure is rent plus insurance and HST for one four-week cycle.
 
+## Moving services
+
+Moving service rates are defined in `src/moving-rates.ts`. The builder can apply regular, storage-promotion, or premium/rush rates by unit size. It also provides quick-add controls for the standard fuel surcharge, after-hours service, and additional stairs. The same module records staff counts, free-moving hours, overage rates, cancellation and reschedule fees, and bin rental packages for future workflow expansion.
+
 ## Storage and privacy
 
 Drafts and saved quotations use this browser’s localStorage. No customer information is sent to the application server. The live rate request sends only the public tenant header to the rate service. Do not add customer uploads, email delivery, or analytics without a separate privacy review and explicit authorization.
