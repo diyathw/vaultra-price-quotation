@@ -19,7 +19,7 @@ Open http://localhost:5173. Enter customer details, choose a floor and unit, adj
 
 Quotes and the current draft are stored in this browser's localStorage. There is no server, customer account, or email delivery. Saved quotes can be opened, edited and printed.
 
-Use **Quick prices** during a tour to check current read-only online storage rent by floor, size, and unit type, calculate a cylinder-lock total, and review moving-bin and moving-service reference prices. This section never changes the active quotation. Use **Refresh rates** before answering a customer; if the public rate service is unavailable, use the builder’s manual-rate fallback.
+Use **Quick prices** during a tour to check current read-only online storage rent by floor, size, and unit type, calculate a cylinder-lock total, and review moving-bin and moving-service reference prices. This section never changes the active quotation. Use **Refresh rates** before answering a customer; if the public rate service is unavailable, it shows the checked snapshot in `src/web-rates-fallback.json` and labels it as a fallback.
 
 ## Pricing
 

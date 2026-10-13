@@ -1,10 +1,13 @@
 import { round, type Quote } from './quote';
+import fallbackSource from './web-rates-fallback.json';
 
 export const RATE_ENDPOINT = 'https://cdn.akiba.ca/customer/api/v1/units/4';
 export interface LiveRate {
   id: string; size: string; type: string; regular: number; available: number;
   promotion: string; promotional: number | null; discount: number; cycles: number; needsReview: boolean;
 }
+export const fallbackRates: LiveRate[] = fallbackSource.rates;
+export const fallbackRatesCheckedAt = fallbackSource.checkedAt;
 type Obj = Record<string, unknown>;
 const object = (v: unknown): Obj => v !== null && typeof v === 'object' && !Array.isArray(v) ? v as Obj : {};
 function price(value: unknown): number {

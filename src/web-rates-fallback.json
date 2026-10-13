@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-12T22:00:00-04:00",
+  "billingCycle": "Every Four Weeks",
+  "rates": [
+    { "id": "fallback-5x5.1-max-value-locker", "size": "5x5.1", "type": "Max Value Locker", "regular": 15, "available": 20, "promotion": "50% Off 12 Weeks", "promotional": 7.5, "discount": 50, "cycles": 3, "needsReview": false },
+    { "id": "fallback-5x5.4-stacked-unit-climate", "size": "5x5.4", "type": "Stacked Unit Climate Control", "regular": 26, "available": 14, "promotion": "50% Off 8 Weeks", "promotional": 13, "discount": 50, "cycles": 2, "needsReview": false },
+    { "id": "fallback-5x5.1-mailbox", "size": "5x5.1", "type": "Mailbox", "regular": 33, "available": 13, "promotion": "50% Off 12 Weeks", "promotional": 16.5, "discount": 50, "cycles": 3, "needsReview": false },
+    { "id": "fallback-5x5-upper", "size": "5x5", "type": "Upper Floor Climate Control", "regular": 42, "available": 17, "promotion": "50% Off 8 Weeks", "promotional": 21, "discount": 50, "cycles": 2, "needsReview": false },
+    { "id": "fallback-5x5-moving-storage", "size": "5x5", "type": "Moving + Storage", "regular": 47, "available": 3, "promotion": "Free Move In", "promotional": 47, "discount": 0, "cycles": 1, "needsReview": true },
+    { "id": "fallback-5x5-premium-upper", "size": "5x5", "type": "Premium Upper Floor Climate", "regular": 51, "available": 2, "promotion": "50% Off 12 Weeks", "promotional": 25.5, "discount": 50, "cycles": 3, "needsReview": false },
+    { "id": "fallback-5x5-ground", "size": "5x5", "type": "Ground Floor Climate Control", "regular": 77, "available": 1, "promotion": "50% Off 4 Weeks", "promotional": 38.5, "discount": 50, "cycles": 1, "needsReview": false },
+    { "id": "fallback-5x10-upper", "size": "5x10", "type": "Upper Floor Climate Control", "regular": 106, "available": 1, "promotion": "50% Off 4 Weeks", "promotional": 53, "discount": 50, "cycles": 1, "needsReview": false },
+    { "id": "fallback-10x5-upper", "size": "10x5", "type": "Upper Floor Climate Control", "regular": 106, "available": 2, "promotion": "", "promotional": null, "discount": 0, "cycles": 1, "needsReview": false },
+    { "id": "fallback-5x10-moving-storage", "size": "5x10", "type": "Moving + Storage", "regular": 115, "available": 3, "promotion": "Free Move In", "promotional": 115, "discount": 0, "cycles": 1, "needsReview": true },
+    { "id": "fallback-20x5-upper", "size": "20x5", "type": "Upper Floor Climate Control", "regular": 166, "available": 11, "promotion": "", "promotional": null, "discount": 0, "cycles": 1, "needsReview": false },
+    { "id": "fallback-10x10-upper", "size": "10x10", "type": "Upper Floor Climate Control", "regular": 166, "available": 1, "promotion": "", "promotional": null, "discount": 0, "cycles": 1, "needsReview": false },
+    { "id": "fallback-5x10-ground", "size": "5x10", "type": "Ground Floor Climate Control", "regular": 169, "available": 1, "promotion": "50% Off 4 Weeks", "promotional": 84.5, "discount": 50, "cycles": 1, "needsReview": false },
+    { "id": "fallback-10x5-ground", "size": "10x5", "type": "Ground Floor Climate Control", "regular": 169, "available": 1, "promotion": "50% Off 4 Weeks", "promotional": 84.5, "discount": 50, "cycles": 1, "needsReview": false },
+    { "id": "fallback-10x5-premium-ground", "size": "10x5", "type": "Premium Ground Floor Climate", "regular": 175, "available": 1, "promotion": "", "promotional": null, "discount": 0, "cycles": 1, "needsReview": false },
+    { "id": "fallback-10x6-ground", "size": "10x6", "type": "Ground Floor Climate Control", "regular": 185, "available": 4, "promotion": "", "promotional": null, "discount": 0, "cycles": 1, "needsReview": false },
+    { "id": "fallback-10x10-moving-storage", "size": "10x10", "type": "Moving + Storage", "regular": 189, "available": 3, "promotion": "Free Move In", "promotional": 189, "discount": 0, "cycles": 1, "needsReview": true },
+    { "id": "fallback-6x10-premium-ground", "size": "6x10", "type": "Premium Ground Floor Climate", "regular": 194, "available": 1, "promotion": "", "promotional": null, "discount": 0, "cycles": 1, "needsReview": false },
+    { "id": "fallback-10x11-upper", "size": "10x11", "type": "Upper Floor Climate Control", "regular": 199, "available": 1, "promotion": "50% Off 4 Weeks", "promotional": 99.5, "discount": 50, "cycles": 1, "needsReview": false },
+    { "id": "fallback-10x15-moving-storage", "size": "10x15", "type": "Moving + Storage", "regular": 266, "available": 2, "promotion": "Free Move In", "promotional": 266, "discount": 0, "cycles": 1, "needsReview": true },
+    { "id": "fallback-10x11-ground", "size": "10x11", "type": "Ground Floor Climate Control", "regular": 282, "available": 3, "promotion": "", "promotional": null, "discount": 0, "cycles": 1, "needsReview": false },
+    { "id": "fallback-10x15-premium-upper", "size": "10x15", "type": "Premium Upper Floor Climate", "regular": 307, "available": 1, "promotion": "", "promotional": null, "discount": 0, "cycles": 1, "needsReview": false },
+    { "id": "fallback-10x20-moving-storage", "size": "10x20", "type": "Moving + Storage", "regular": 369, "available": 3, "promotion": "Free Move In", "promotional": 369, "discount": 0, "cycles": 1, "needsReview": true },
+    { "id": "fallback-10x30-moving-storage", "size": "10x30", "type": "Moving + Storage", "regular": 491, "available": 2, "promotion": "Free Move In", "promotional": 491, "discount": 0, "cycles": 1, "needsReview": true },
+    { "id": "fallback-10x26-premium-ground", "size": "10x26", "type": "Premium Ground Floor Climate", "regular": 729, "available": 1, "promotion": "", "promotional": null, "discount": 0, "cycles": 1, "needsReview": false }
+  ]
+}

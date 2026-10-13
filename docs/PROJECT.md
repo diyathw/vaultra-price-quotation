@@ -40,7 +40,7 @@ Drafts and saved quotations use this browser’s localStorage. No customer infor
 
 ## Quick tour lookup
 
-The **Quick prices** workspace view is read-only and separate from quote building. It refreshes the current public Markham inventory rate service and lists prices by floor, unit size, and unit type, so a size such as 5 × 5 can be explained correctly when several unit types have different rates. It also provides a cylinder-lock quantity total and reference prices for moving services and bins. If the service cannot be reached, staff should use the builder’s editable manual-rate fields and confirm the price before quoting.
+The **Quick prices** workspace view is read-only and separate from quote building. It refreshes the current public Markham inventory rate service and lists prices by floor, unit size, and unit type, so a size such as 5 × 5 can be explained correctly when several unit types have different rates. It also provides a cylinder-lock quantity total and reference prices for moving services and bins. If the service cannot be reached, it shows the checked snapshot in `src/web-rates-fallback.json` and labels it as a fallback; staff should confirm the price before quoting.
 
 ## Testing
 
