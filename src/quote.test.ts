@@ -1,6 +1,36 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { calculate, newQuote, validate, units, legacyUnits } from './quote';
+import { parseRates, applyLiveRate } from './live-rates';
+
+const liveFixture = (promotion: unknown = { name: '50% Off 8 Weeks', pricing: { monthly: '21.00' } }) => ({ billing_cycle_label: 'Every Four Weeks', insurance_included_in_price: 0, is_discount_enabled: true, sizes: { small: [{ dimensions: '5 x 5', types: [{ id: 21, unit_type: 'Upper Floor Climate Control', regular_pricing: { monthly: '42.00' }, unit_type_available: 17, promotion }] }] } });
+
+test('live rate preserves unit type and applies promotion exactly once', () => {
+  const rate = parseRates(liveFixture())[0];
+  const q = { ...newQuote(), ...applyLiveRate(rate, '2026-10-12T12:00:00Z') };
+  assert.equal(q.rate, 42);
+  assert.equal(q.floor, 'Upper Floor Climate Control');
+  assert.equal(q.cycles, 2);
+  assert.equal(q.discount, 50);
+  assert.equal(calculate(q).rent - calculate(q).discount, 42);
+  assert.equal(calculate(q).recurring, 64.35);
+});
+test('unrecognized or inconsistent promotions use regular rent for manual review', () => {
+  for (const promo of [{ name: 'Free Move In', pricing: { monthly: '42' } }, { name: '50% Off 8 Weeks', pricing: { monthly: '30' } }]) {
+    const r = parseRates(liveFixture(promo))[0];
+    assert.equal(r.needsReview, true);
+    assert.equal(r.discount, 0);
+    assert.equal(r.cycles, 1);
+  }
+  assert.equal(parseRates(liveFixture(null))[0].needsReview, false);
+});
+test('live source rejects changed billing, malformed data and unavailable selections', () => {
+  assert.throws(() => parseRates({ ...liveFixture(), billing_cycle_label: 'Monthly' }));
+  assert.throws(() => parseRates({ ...liveFixture(), insurance_included_in_price: 1 }));
+  assert.throws(() => parseRates({ sizes: {} }));
+  const r = parseRates(liveFixture())[0];
+  assert.throws(() => applyLiveRate({ ...r, available: 0 }, new Date().toISOString()));
+});
 
 test('4-week 50% offer reconciles itemized charges and tax', () => {
   const q = { ...newQuote(), rate: 200 };

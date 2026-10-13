@@ -17,9 +17,11 @@ npm run dev
 
 Open http://localhost:5173. Enter customer details, choose a floor and unit, adjust pricing in **Pricing & extras**, and click **Print quotation**. Select **Save as PDF** in the browser print dialog to export. Disable browser headers and footers. Print styling supports A4 and flowing long notes.
 
-Quotes and the current draft are stored in this browser's localStorage. There is no server, customer account, email delivery, or live inventory integration. Saved quotes can be opened, edited and printed.
+Quotes and the current draft are stored in this browser's localStorage. There is no server, customer account, or email delivery. Saved quotes can be opened, edited and printed.
 
 ## Pricing
+
+Click **Refresh rates** to retrieve current Markham prices and availability. Select a size and unit type, then click **Use this rate** to apply regular rent and a recognized promotion. The last-updated time is shown, and existing quotations remain unchanged until a rate is applied. Refresh data older than 15 minutes before applying it. If the rate service is unavailable, enter rates manually. Unrecognized offers require manual review; insurance and extra fees remain separate.
 
 Choose floor-specific rates or enter a custom rate. Fifth and sixth floors require manual rates. Prices and promotions are editable and require staff confirmation.
 
