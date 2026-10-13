@@ -9,4 +9,4 @@ export const movingRates: MovingRate[] = [
 ];
 export const movingExtras = { fuelStandard: 39.99, fuelExtended: 79.99, afterHours: 250, premiumIncrease: 0.2, lateCancellation: 210, lateReschedule: 100, stairs: 125, unreturnedBin: 50 } as const;
 export const binPackages = [{ bins: 5, perBin: 3, cycle: 15 }, { bins: 10, perBin: 2.5, cycle: 25 }, { bins: 20, perBin: 2, cycle: 40 }, { bins: 30, perBin: 1.75, cycle: 52.5 }, { bins: 40, perBin: 1.5, cycle: 60 }] as const;
-export function movingRateFor(size: string, kind: 'base' | 'promotion' | 'premium' = 'base') { const normalized = size.replaceAll(' ', '').toLowerCase(); const rate = movingRates.find(r => r.size === normalized); return rate ? rate[kind] : null; }
+export function movingRateFor(size: string, kind: 'base' | 'promotion' | 'premium' = 'base') { const normalized = size.replaceAll('×', 'x').replace(/\s+/g, '').toLowerCase().replace(/(pre)?ft$/, ''); const rate = movingRates.find(r => r.size === normalized); return rate ? rate[kind] : null; }

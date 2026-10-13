@@ -8,6 +8,8 @@ test('moving service rates include regular, promotion, premium and extras', () =
   assert.equal(movingRateFor('10 x 10', 'base'), 650);
   assert.equal(movingRateFor('10x10', 'promotion'), 750);
   assert.equal(movingRateFor('10x10', 'premium'), 750);
+  assert.equal(movingRateFor('10 × 30 Pre ft', 'base'), 3000);
+  assert.equal(movingRateFor('5x5 ft', 'base'), 300);
   assert.equal(movingRateFor('unknown', 'base'), null);
   assert.equal(movingExtras.stairs, 125);
   assert.equal(binPackages[4].cycle, 60);
