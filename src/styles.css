@@ -196,8 +196,15 @@ main { max-width: 1530px; margin: auto; padding: 34px 36px 18px; }
 .guide { font-size: 12px; line-height: 1.7; color: #747f84; }
 .guide h3 { color: #2e383c; font-weight: 600; margin-top: 16px; }
 .guide a { text-decoration: underline; }
+.guide-rate-actions { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 10px; }
+.guide-rate-actions p { font-size: 9px; color: #89979c; }
+.guide-rate-actions button { font-size: 10px; white-space: nowrap; }
 .rate-table { margin-top: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
 .rate-table button { border: 1px solid #dae0e3; border-radius: 4px; padding: 6px 8px; display: flex; align-items: center; gap: 7px; font-size: 11px; }
+.rate-table button > span { display: grid; gap: 2px; text-align: left; }
+.rate-table button > span > strong { font-weight: 500; }
+.rate-table button small { color: #8a989d; font-size: 8px; }
+.rate-table button:disabled { opacity: .5; cursor: not-allowed; }
 .rate-table strong { margin-left: auto; }
 .dialog-actions { display: flex; justify-content: flex-end; gap: 10px; }
 .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 12px; color: #fff; background: #313b40; border: 1px solid #54666d; box-shadow: 0 5px 25px #232b2e30; padding: 14px 18px; border-radius: 9px; font-size: 12px; z-index: 100; }
