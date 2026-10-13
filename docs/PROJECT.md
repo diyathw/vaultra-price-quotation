@@ -38,6 +38,10 @@ The bin rental controls quote a package per cycle and an optional number of unre
 
 Drafts and saved quotations use this browser’s localStorage. No customer information is sent to the application server. The live rate request sends only the public tenant header to the rate service. Do not add customer uploads, email delivery, or analytics without a separate privacy review and explicit authorization.
 
+## Quick tour lookup
+
+The **Quick prices** workspace view is read-only and separate from quote building. It refreshes the current public Markham inventory rate service and lists prices by floor, unit size, and unit type, so a size such as 5 × 5 can be explained correctly when several unit types have different rates. It also provides a cylinder-lock quantity total and reference prices for moving services and bins. If the service cannot be reached, staff should use the builder’s editable manual-rate fields and confirm the price before quoting.
+
 ## Testing
 
 The test suite covers quote calculations, live-rate parsing, promotion handling, malformed responses, unavailable units, validation, and the distinction between local reference rates. Run `npm test` before committing. Run `npm run build` to check TypeScript and the production bundle.
