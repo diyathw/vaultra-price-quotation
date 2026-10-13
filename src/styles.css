@@ -179,6 +179,7 @@ main { max-width: 1530px; margin: auto; padding: 34px 36px 18px; }
 .moving-tools > label { font-size: 10px; font-weight: 550; color: #5f6b5d; }
 .moving-tools select { height: 36px; border: 1px solid #dce2dc; border-radius: 5px; padding: 0 9px; font-size: 11px; background: white; }
 .moving-tools .quick-actions { display: flex; flex-wrap: wrap; gap: 7px; }
+.bin-fields { margin-top: 13px; }
 .error-box { background: #fff1ec; border: 1px solid #eed1c7; border-radius: 6px; padding: 12px; font-size: 11px; color: #ad4834; margin: 15px; line-height: 1.7; }
 .preview-dialog { width: min(850px, 96vw); max-width: 850px !important; max-height: 94vh; overflow-y: auto; }
 .preview-dialog .quote-paper { font-size: 12px; }

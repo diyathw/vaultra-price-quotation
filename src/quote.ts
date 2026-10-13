@@ -27,12 +27,12 @@ export const presets: Preset[] = [
 ];
 export interface Quote {
   id: string; date: string; validDays: number; customer: string; company: string; email: string; phone: string; address: string; preparedBy: string; moveIn: string;
-  floor: string; size: string; unitId: string; rateSource: string; rate: number; quantity: number; preset: string; cycles: number; discount: number; insurance: number; admin: number; lockPrice: number; locks: number; lockDiscount: number; moving: number; tax: number; notes: string; paymentTerms: string;
+  floor: string; size: string; unitId: string; rateSource: string; rate: number; quantity: number; preset: string; cycles: number; discount: number; insurance: number; admin: number; lockPrice: number; locks: number; lockDiscount: number; moving: number; binPackage: number; binCycles: number; unreturnedBins: number; tax: number; notes: string; paymentTerms: string;
 }
 export function today() { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
 export function newQuote(): Quote { const unit = units.find(u => u.floor === 'Ground' && u.size === '10x10')!; return {
   id: `VQ-${today().replaceAll('-', '')}-${crypto.randomUUID().slice(0, 6).toUpperCase()}`, date: today(), validDays: 7, customer: '', company: '', email: '', phone: '', address: '', preparedBy: '', moveIn: '',
-  floor: unit.floor, size: unit.size, unitId: unit.id, rateSource: unit.source, rate: unit.rate, quantity: 1, preset: '4weeks', cycles: 1, discount: 50, insurance: 14.95, admin: 19.95, lockPrice: 18.99, locks: 1, lockDiscount: 0, moving: 0, tax: 13, notes: '', paymentTerms: '',
+  floor: unit.floor, size: unit.size, unitId: unit.id, rateSource: unit.source, rate: unit.rate, quantity: 1, preset: '4weeks', cycles: 1, discount: 50, insurance: 14.95, admin: 19.95, lockPrice: 18.99, locks: 1, lockDiscount: 0, moving: 0, binPackage: 0, binCycles: 1, unreturnedBins: 0, tax: 13, notes: '', paymentTerms: '',
 }; }
 export const money = (n: number) => new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD' }).format(n);
 export const round = (n: number) => Math.round((n + Number.EPSILON) * 100) / 100;
@@ -41,10 +41,12 @@ export function calculate(q: Quote) {
   const discount = round(rent * q.discount / 100);
   const insurance = round(q.insurance * q.quantity * q.cycles);
   const locks = round(q.lockPrice * q.locks * (1 - q.lockDiscount / 100));
-  const subtotal = round(rent - discount + insurance + q.admin + locks + q.moving);
+  const bins = round(q.binPackage * q.binCycles);
+  const binReplacement = round(q.unreturnedBins * 50);
+  const subtotal = round(rent - discount + insurance + q.admin + locks + q.moving + bins + binReplacement);
   const tax = round(subtotal * q.tax / 100);
   const recurringSubtotal = round((q.rate + q.insurance) * q.quantity);
-  return { rent, discount, insurance, locks, subtotal, tax, total: round(subtotal + tax), recurring: round(recurringSubtotal + round(recurringSubtotal * q.tax / 100)), savings: round(discount + round(discount * q.tax / 100)) };
+  return { rent, discount, insurance, locks, bins, binReplacement, subtotal, tax, total: round(subtotal + tax), recurring: round(recurringSubtotal + round(recurringSubtotal * q.tax / 100) + q.binPackage), savings: round(discount + round(discount * q.tax / 100)) };
 }
 export function dateLabel(value: string) { return value ? new Date(value + 'T12:00:00').toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: 'numeric' }) : 'To be confirmed'; }
 export function validUntil(q: Quote) { const d = new Date(q.date + 'T12:00:00'); d.setDate(d.getDate() + q.validDays); return d.toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: 'numeric' }); }
