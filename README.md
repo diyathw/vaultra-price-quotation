@@ -23,6 +23,8 @@ Quotes and the current draft are stored in this browser's localStorage. There is
 
 Click **Refresh rates** to retrieve current Markham prices and availability. Select a size and unit type, then click **Use this rate** to apply regular rent and a recognized promotion. The last-updated time is shown, and existing quotations remain unchanged until a rate is applied. Refresh data older than 15 minutes before applying it. If the rate service is unavailable, enter rates manually. Unrecognized offers require manual review; insurance and extra fees remain separate.
 
+Moving-service rates are available in the **Pricing & extras** tab. Choose a regular, storage-promotion, or premium/rush moving rate by unit size, then add standard fuel, after-hours, or stairs charges when applicable. The rate guide also records included free-move hours, overage rates, staff counts, cancellation and reschedule fees, and bin-rental packages.
+
 Choose floor-specific rates or enter a custom rate. Fifth and sixth floors require manual rates. Prices and promotions are editable and require staff confirmation.
 
 One cycle is 28 days. Insurance is charged per unit per cycle, admin and moving fees once per quotation, locks by quantity. All lines round to cents; tax rounds once on the subtotal.
