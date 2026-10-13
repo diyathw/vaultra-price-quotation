@@ -32,7 +32,7 @@ The rate refresh is read-only. It never changes an existing quotation until the 
 
 Moving service rates are defined in `src/moving-rates.ts`. The builder can apply regular, storage-promotion, or premium/rush rates by unit size. It also provides quick-add controls for the standard fuel surcharge, after-hours service, and additional stairs. The same module records staff counts, free-moving hours, overage rates, cancellation and reschedule fees, and bin rental packages for future workflow expansion.
 
-The bin rental controls quote a package per cycle and an optional number of unreturned bins at $50 each. Both appear as separate lines in the printable quotation and are included in the subtotal and HST.
+The bin rental controls quote a package per cycle and an optional number of unreturned bins at $50 each. Customers can quote bins together with storage or enable **Standalone bin rental (no storage unit)** for bin-only customers. Both appear as separate lines in the printable quotation and are included in the subtotal and HST.
 
 ## Storage and privacy
 

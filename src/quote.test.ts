@@ -66,6 +66,16 @@ test('waived fees, multiple units and moving are calculated independently', () =
   assert.equal(c.total, 904);
   assert.equal(c.recurring, 226);
 });
+test('standalone bin rental excludes storage charges', () => {
+  const q = { ...newQuote(), binOnly: true, binPackage: 25, binCycles: 2 };
+  const c = calculate(q);
+  assert.equal(c.rent, 0);
+  assert.equal(c.insurance, 0);
+  assert.equal(c.subtotal, 50);
+  assert.equal(c.recurring, 25);
+  assert.equal(validate({ ...q, customer: 'Bin customer' }).length, 0);
+  assert.ok(validate({ ...q, customer: 'Bin customer', binPackage: 0 }).some(e => e.includes('bin rental package')));
+});
 test('validation rejects missing customers and invalid financial inputs', () => {
   assert.ok(validate(newQuote()).includes('Enter a customer name.'));
   assert.equal(validate({ ...newQuote(), customer: 'Test Customer' }).length, 0);
