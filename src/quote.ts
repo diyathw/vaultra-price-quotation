@@ -27,7 +27,7 @@ export const presets: Preset[] = [
 ];
 export interface Quote {
   id: string; date: string; validDays: number; customer: string; company: string; email: string; phone: string; address: string; preparedBy: string; moveIn: string;
-  floor: string; size: string; unitId: string; rateSource: string; rate: number; quantity: number; preset: string; cycles: number; discount: number; insurance: number; admin: number; lockPrice: number; locks: number; lockDiscount: number; moving: number; binPackage: number; binCycles: number; unreturnedBins: number; tax: number; notes: string; paymentTerms: string;
+  floor: string; size: string; unitId: string; rateSource: string; rate: number; quantity: number; liveType?: string; liveAvailable?: number; livePromotion?: string; liveAdvertisedRate?: number | null; preset: string; cycles: number; discount: number; insurance: number; admin: number; lockPrice: number; locks: number; lockDiscount: number; moving: number; binPackage: number; binCycles: number; unreturnedBins: number; tax: number; notes: string; paymentTerms: string;
 }
 export function today() { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
 export function newQuote(): Quote { const unit = units.find(u => u.floor === 'Ground' && u.size === '10x10')!; return {

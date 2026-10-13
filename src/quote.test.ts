@@ -22,6 +22,10 @@ test('live rate preserves unit type and applies promotion exactly once', () => {
   assert.equal(q.floor, newQuote().floor);
   assert.equal(q.cycles, 2);
   assert.equal(q.discount, 50);
+  assert.equal(q.liveType, 'Upper Floor Climate Control');
+  assert.equal(q.liveAvailable, 17);
+  assert.equal(q.livePromotion, '50% Off 8 Weeks');
+  assert.equal(q.liveAdvertisedRate, 21);
   assert.equal(calculate(q).rent - calculate(q).discount, 42);
   assert.equal(calculate(q).recurring, 64.35);
 });
