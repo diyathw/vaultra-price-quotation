@@ -33,3 +33,7 @@ One cycle is 28 days. Insurance is charged per unit per cycle, admin and moving 
 npm test
 npm run build
 ```
+
+Tests run with Vitest. Husky runs `npm test` automatically before each commit so calculation and pricing regressions are caught locally before changes are pushed.
+
+The interface is responsive: on smaller screens the sidebar becomes a compact top navigation, the builder and preview stack vertically, and the quotation preview remains printable on Letter paper.

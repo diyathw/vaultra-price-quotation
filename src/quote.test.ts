@@ -1,4 +1,4 @@
-import { test } from 'node:test';
+import { test } from 'vitest';
 import assert from 'node:assert/strict';
 import { calculate, formatUnitSize, newQuote, validate, units, legacyUnits } from './quote';
 import { parseRates, applyLiveRate } from './live-rates';
