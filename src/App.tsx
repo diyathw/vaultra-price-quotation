@@ -45,7 +45,7 @@ function QuoteDocument({ quote: q }: { quote: Quote }) {
 }
 
 export default function App() {
-  const [quote, setQuote] = useState<Quote>(() => ({ ...newQuote(), ...readStored<Partial<Quote>>('vaultra-draft-v1', {}) }));
+  const [quote, setQuote] = useState<Quote>(() => { const draft = readStored<Partial<Quote>>('vaultra-draft-v1', {}); const floor = draft.floor && floors.includes(draft.floor) ? draft.floor : undefined; return { ...newQuote(), ...draft, ...(floor ? { floor } : draft.unitId?.startsWith('live-') ? { floor: 'Ground' } : {}) }; });
   const [saved, setSaved] = useState<Quote[]>(() => { const v = readStored<unknown>('vaultra-quotes-v1', []); return Array.isArray(v) ? v.filter(q => q && typeof q.id === 'string' && typeof q.customer === 'string') : []; });
   const [view, setView] = useState('builder');
   const [dialog, setDialog] = useState<'sources' | 'preview' | 'new' | null>(null);
