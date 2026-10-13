@@ -207,49 +207,50 @@ main { max-width: 1530px; margin: auto; padding: 34px 36px 18px; }
 @media (max-width: 1190px) { .sidebar { width: 194px; padding: 28px 14px 0; } .main-shell { margin-left: 194px; width: calc(100% - 194px); } main { padding: 26px 22px; } .builder-layout { grid-template-columns: minmax(310px,1fr) minmax(360px,1.05fr); gap: 18px; } .editor-section { padding: 19px; } .quote-paper { padding: 25px 21px 18px; } .print-bar { flex-wrap: wrap; } }
 @media (max-width: 980px) { .sidebar { width: 175px; } .main-shell { margin-left: 175px; width: calc(100% - 175px); } .builder-layout { grid-template-columns: 1fr; } .preview-column { max-width: 650px; width: 100%; margin: auto; } .page-heading h1 { font-size: 26px; } .toolbar-id { display: none; } }
 @media (max-width: 640px) { .sidebar { position: static; width: 100%; padding: 18px; } .brand { font-size: 26px; } .brand small { font-size: 7px; } .brand-mark { width: 34px; height: 36px; } .workspace-label, .sidebar-bottom { display: none; } .sidebar nav { display: flex; margin-top: 18px; gap: 3px; } .sidebar nav button { font-size: 10px; padding: 9px 7px; gap: 6px; } .sidebar nav button svg:last-child:not(:first-child) { display: none; } .app-shell { display: block; } .main-shell { margin-left: 0; width: 100%; } .topbar { padding: 0 20px; height: 48px; } .top-location { display: none; } main { padding: 24px 16px; } .page-heading { align-items: flex-start; } .page-heading h1 { font-size: 25px; } .page-heading p { font-size: 10px; max-width: 230px; line-height: 1.7; } .page-heading .eyebrow { font-size: 6px; } .page-heading button { font-size: 10px; padding: 0 10px; height: 32px; } .autosave { font-size: 8px; } .builder-toolbar { padding: 10px; } .builder-layout { gap: 24px; } .quote-paper { padding: 25px 18px 18px; } .paper-header { gap: 8px; } .paper-location { font-size: 6px; max-width: 150px; } .paper-title h2 { font-size: 23px; } .paper-meta { gap: 10px; } .paper-meta dd { max-width: 100px; } .unit-summary { gap: 8px; padding: 12px 8px; } .unit-summary strong { font-size: 11px; } .unit-summary strong > span { font-size: 8px; } .unit-period > span { font-size: 6px; } .paper-offer { flex-wrap: wrap; font-size: 7px; } .grand-total > strong { font-size: 23px; } .grand-total > span { font-size: 9px; } .recurring { font-size: 7px; } .recurring span { font-size: 6px; } .recurring > strong { font-size: 12px; } .saved-row { flex-wrap: wrap; gap: 10px; } .saved-row > div { min-width: 65%; } .app-footer { font-size: 7px; } .toast { width: 90%; font-size: 11px; } }
-@page { size: A4; margin: 14mm; }
+@page { size: Letter; margin: 0.35in; }
 @media print {
   html, body, #root { background: white !important; color: #000; margin: 0; width: 100%; }
   .app-shell, .toast, [data-slot=dialog-portal], [data-slot=dialog-overlay], [data-slot=dialog-content] { display: none !important; }
   .print-only { display: block !important; }
-  .quote-paper { width: 100%; padding: 7mm 0 0; border-top: 2mm solid #303a3f; font-size: 10pt; box-shadow: none; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-  .paper-header { padding-bottom: 7mm; }
-  .brand { font-size: 30pt; }
-  .paper-header .brand { width: 75mm; max-width: 75mm; }
-  .brand small { font-size: 7pt; }
-  .paper-location, .paper-location strong { font-size: 8pt; color: #46555b; }
-  .paper-title { padding-top: 7mm; }
-  .paper-title .eyebrow { font-size: 7pt; }
-  .paper-title h2 { font-size: 26pt; }
-  .document-label { font-size: 7pt; }
-  .paper-meta { padding: 6mm 0; gap: 12mm; }
-  .paper-meta .eyebrow { font-size: 7pt; }
-  .paper-meta h3 { font-size: 12pt; }
-  .paper-meta p, .paper-meta dl { font-size: 9pt; color: #3c494f; }
+  .quote-paper { width: 100%; padding: 0.14in 0 0; border-top: 1.5mm solid #303a3f; font-size: 8.5pt; box-shadow: none; print-color-adjust: exact; -webkit-print-color-adjust: exact; break-inside: avoid; }
+  .paper-header { padding-bottom: 0.12in; }
+  .brand { font-size: 24pt; }
+  .paper-header .brand { width: 2.55in; max-width: 2.55in; }
+  .brand small { font-size: 6pt; }
+  .paper-location, .paper-location strong { font-size: 7pt; color: #46555b; }
+  .paper-title { padding-top: 0.12in; }
+  .paper-title .eyebrow { font-size: 6pt; }
+  .paper-title h2 { font-size: 21pt; }
+  .document-label { font-size: 6pt; padding: 4px 6px; }
+  .paper-meta { padding: 0.12in 0; gap: 0.35in; }
+  .paper-meta .eyebrow { font-size: 6pt; }
+  .paper-meta h3 { font-size: 10pt; }
+  .paper-meta p, .paper-meta dl { font-size: 7pt; color: #3c494f; }
   .paper-meta dd { max-width: none; }
-  .unit-summary { padding: 4mm; }
-  .unit-summary strong { font-size: 13pt; }
-  .unit-summary strong > span, .unit-summary p, .unit-period > span { font-size: 8pt; }
-  .unit-period strong { font-size: 11pt; }
-  .paper-offer { font-size: 9pt; margin: 4mm 0 0; }
-  .quote-lines { font-size: 9pt; margin-top: 4mm; }
-  .quote-lines th { font-size: 8pt; padding: 3mm 0; }
-  .quote-lines td { padding: 3mm 0; }
-  .quote-lines td small { font-size: 7pt; color: #5a6a71; }
-  .paper-totals > div { font-size: 9pt; }
-  .paper-totals .grand-total { padding: 5mm; }
-  .grand-total > span { font-size: 12pt; }
-  .grand-total > strong { font-size: 25pt; }
-  .grand-total small { font-size: 7pt; }
-  .recurring { font-size: 9pt; padding: 4mm 0; }
-  .recurring > strong { font-size: 14pt; }
-  .recurring span, .recurring small { font-size: 8pt; }
-  .paper-terms { font-size: 8pt; padding: 4mm 0; color: #4e5f66; }
-  .paper-terms h4 { font-size: 9pt; }
-  .paper-footer { font-size: 8pt; }
-  .quote-notes, .move-in { font-size: 9pt; }
-  .quote-lines tr, .unit-summary, .grand-total, .recurring, .paper-footer { break-inside: avoid; }
-  .paper-meta, .paper-header, .paper-title { break-inside: avoid; }
+  .unit-summary { padding: 2.5mm 3mm; }
+  .unit-summary strong { font-size: 10pt; }
+  .unit-summary strong > span, .unit-summary p, .unit-period > span { font-size: 7pt; }
+  .unit-period strong { font-size: 9pt; }
+  .paper-offer { font-size: 7.5pt; margin: 2.5mm 0 0; }
+  .quote-lines { font-size: 7.5pt; margin-top: 2.5mm; }
+  .quote-lines th { font-size: 6.5pt; padding: 1.5mm 0; }
+  .quote-lines td { padding: 1.8mm 0; }
+  .quote-lines td small { font-size: 6pt; color: #5a6a71; margin-top: 2px; }
+  .paper-totals { padding-top: 2mm; }
+  .paper-totals > div { font-size: 7.5pt; margin: 3px 0; }
+  .paper-totals .grand-total { padding: 3mm; margin-top: 2.5mm; }
+  .grand-total > span { font-size: 9.5pt; }
+  .grand-total > strong { font-size: 20pt; }
+  .grand-total small { font-size: 6pt; }
+  .recurring { font-size: 7.5pt; padding: 2.5mm 0 3mm; }
+  .recurring > strong { font-size: 11pt; }
+  .recurring span, .recurring small { font-size: 6.5pt; }
+  .paper-terms { font-size: 6.5pt; padding: 2.5mm 0; color: #4e5f66; }
+  .paper-terms h4 { font-size: 7.5pt; }
+  .paper-footer { font-size: 6.5pt; padding-top: 2.5mm; }
+  .quote-notes, .move-in { font-size: 7.5pt; margin-top: 2.5mm; }
+  .quote-lines tr, .unit-summary, .grand-total, .recurring, .paper-footer, .quote-notes, .move-in { break-inside: avoid; }
+  .paper-meta, .paper-header, .paper-title, .paper-terms { break-inside: avoid; }
   .paper-title { break-after: avoid; }
   .quote-lines thead { display: table-header-group; }
 }

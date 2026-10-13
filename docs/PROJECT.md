@@ -11,7 +11,7 @@
 3. Click **Refresh rates** to load current Markham unit rates and availability.
 4. Select a live unit type and click **Use this rate**, or enter a manual rate.
 5. Review promotion, insurance, administration, lock, moving, and HST values.
-6. Save the quote locally or print it. The browser print dialog can save an A4 PDF.
+6. Save the quote locally or print it. The browser print dialog can save a Letter-size PDF; the print layout is compacted to keep the quotation on one sheet.
 
 ## Rate refresh
 
