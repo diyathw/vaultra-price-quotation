@@ -19,6 +19,8 @@ Open http://localhost:5173. Enter customer details, choose a floor and unit, adj
 
 Quotes and the current draft are stored in this browser's localStorage. There is no server, customer account, or email delivery. Saved quotes can be opened, edited and printed.
 
+Use **Quick prices** during a tour to check read-only storage rent by floor and size, calculate a cylinder-lock total, and review moving-bin and moving-service reference prices. This section never changes the active quotation.
+
 ## Pricing
 
 Click **Refresh rates** to retrieve current Markham prices and availability. Select a size and unit type, then click **Use this rate** to apply regular rent and a recognized promotion. The last-updated time is shown, and existing quotations remain unchanged until a rate is applied. Refresh data older than 15 minutes before applying it. If the rate service is unavailable, enter rates manually. Unrecognized offers require manual review; insurance and extra fees remain separate.
