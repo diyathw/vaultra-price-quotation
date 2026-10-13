@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { calculate, newQuote, validate, units, legacyUnits } from './quote';
+import { calculate, formatUnitSize, newQuote, validate, units, legacyUnits } from './quote';
 import { parseRates, applyLiveRate } from './live-rates';
 import { binPackages, movingExtras, movingRateFor } from './moving-rates';
 
@@ -11,6 +11,8 @@ test('moving service rates include regular, promotion, premium and extras', () =
   assert.equal(movingRateFor('10 × 30 Pre ft', 'base'), 3000);
   assert.equal(movingRateFor('5x5 ft', 'base'), 300);
   assert.equal(movingRateFor('unknown', 'base'), null);
+  assert.equal(formatUnitSize('10x30 Pre'), '10 × 30 ft · Premium');
+  assert.equal(formatUnitSize('SkyLocker'), 'SkyLocker');
   assert.equal(movingExtras.stairs, 125);
   assert.equal(binPackages[4].cycle, 60);
 });

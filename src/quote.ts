@@ -36,6 +36,7 @@ export function newQuote(): Quote { const unit = units.find(u => u.floor === 'Gr
 }; }
 export const money = (n: number) => new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD' }).format(n);
 export const round = (n: number) => Math.round((n + Number.EPSILON) * 100) / 100;
+export function formatUnitSize(value: string) { const raw = value.trim(); const premium = /\s+Pre$/i.test(raw); const base = raw.replace(/\s+Pre$/i, '').replaceAll('×', 'x').replaceAll('x', ' × '); return `${base}${/[0-9]/.test(base) ? ' ft' : ''}${premium ? ' · Premium' : ''}`; }
 export function calculate(q: Quote) {
   const storage = !q.binOnly;
   const rent = storage ? round(q.rate * q.quantity * q.cycles) : 0;
