@@ -87,6 +87,7 @@ main { max-width: 1530px; margin: auto; padding: 34px 36px 18px; }
 .live-rates-heading p, .live-rate-details p { font-size: 10px; margin-top: 5px; }
 .live-rates button { font-size: 10px; }
 .live-rates select { width: 100%; min-width: 0; height: 36px; background: white; border: 1px solid #dce0e2; border-radius: 5px; padding: 0 7px; font-size: 11px; margin-top: 12px; }
+.live-rate-select { width: 100%; min-width: 0; height: 36px; background: white; font-size: 11px; margin-top: 12px; }
 .live-rate-details { font-size: 11px; line-height: 1.6; margin-top: 12px; }
 .live-rate-details button { margin-top: 10px; }
 .amenities { display: flex; gap: 17px; margin-top: 18px; color: #6a8089; font-size: 9px; }
