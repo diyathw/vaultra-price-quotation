@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-11-09",
+  "facilities": [
+    {
+      "id": "public",
+      "name": "Public Storage",
+      "address": "189 Bullock Drive, Markham",
+      "url": "https://publicstoragecanada.com/self-storage-markham/189-bullock-drive/",
+      "note": "Facility page lists small units from $79/month and medium from $154/month; exact unit prices load separately. These starting prices are not used in the size comparison.",
+      "rates": []
+    },
+    {
+      "id": "access",
+      "name": "Access Storage",
+      "address": "8400 Woodbine Avenue, Markham",
+      "url": "https://www.accessstorage.ca/self-storage/markham/markham/",
+      "note": "Unit-specific prices were not available in the page text. Open the source or call for a matching unit quote.",
+      "rates": []
+    },
+    {
+      "id": "storagemart",
+      "name": "StorageMart",
+      "address": "605 Alden Road, Markham",
+      "url": "https://www.storage-mart.com/toronto/markham",
+      "note": "Advertised introductory prices; regular monthly prices shown alongside. Elevator access, A/C and heat on listed units.",
+      "rates": [
+        {
+          "size": "5x5",
+          "price": 44,
+          "regular": 88,
+          "period": "month",
+          "details": "50% off 3 months · elevator access · A/C and heat"
+        },
+        {
+          "size": "5x10",
+          "price": 49,
+          "regular": 98,
+          "period": "month",
+          "details": "50% off 3 months · elevator access · A/C and heat"
+        }
+      ],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "smartstop",
+      "name": "SmartStop",
+      "address": "506 Copper Creek Drive, Markham",
+      "url": "https://smartstopselfstorage.com/find-storage/on/markham/506-copper-creek-dr",
+      "note": "Advertised special-offer rates. Check unit features and promotional duration with the facility.",
+      "rates": [
+        {
+          "size": "5x5",
+          "price": 37,
+          "period": "month",
+          "details": "Advertised special offer; verify promotion and unit features"
+        },
+        {
+          "size": "10x10",
+          "price": 134,
+          "period": "month",
+          "details": "Advertised special offer; verify promotion and unit features"
+        }
+      ],
+      "checkedAt": "2026-11-09"
+    }
+  ]
+}
