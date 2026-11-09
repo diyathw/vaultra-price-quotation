@@ -42,6 +42,14 @@ Drafts and saved quotations use this browser’s localStorage. No customer infor
 
 The **Quick prices** workspace view is read-only and separate from quote building. It refreshes the current public Markham inventory rate service and lists prices by floor, unit size, and unit type, so a size such as 5 × 5 can be explained correctly when several unit types have different rates. It also provides a cylinder-lock quantity total and reference prices for moving services and bins. If the service cannot be reached, it shows the checked snapshot in `src/web-rates-fallback.json` and labels it as a fallback; staff should confirm the price before quoting.
 
+## Competitor price report
+
+The **Competitor prices** view compares exact unit dimensions, with source links and capture dates. It does not modify a quotation. Vaultra's available climate-controlled rent comes from its rate service, with a labeled fallback if that request fails. Competitor prices are snapshots in `src/competitor-rates.json`. Weekly rates are multiplied by four; monthly rates are converted to 28-day estimates using the average calendar-month length. These are rent comparisons before tax, insurance, and fees, not price-match approvals.
+
+`scripts/scrape-competitors.mjs` reads public HTML and Public Storage’s public unit listing feed for validated exact-size prices. `scripts/scrape-browser-competitors.mjs` uses Playwright Chromium for Access Storage, whose unit prices render in the browser. Both retain the prior snapshot when extraction fails. Public Storage’s Bullock Drive unit feed provides exact dimensions, availability, and rent; the report uses the lowest available rent for each selected size and asks staff to verify features. StorageMart's parser has not validated a current rate; its dated snapshot remains visible.
+
+`.github/workflows/refresh-competitors.yml` is a separate six-hour UTC cron and manual workflow. It runs both scrapers, tests and builds the app, then deploys the refreshed `dist` to GitHub Pages. `.github/workflows/deploy.yml` handles code pushes and pull requests. Scheduled prices are part of each deployment artifact and are not committed by the cron job. Inspect the Actions log and each row's capture date when troubleshooting stale data.
+
 ## Testing
 
 The test suite covers quote calculations, live-rate parsing, promotion handling, malformed responses, unavailable units, validation, and the distinction between local reference rates. Run `npm test` before committing. Run `npm run build` to check TypeScript and the production bundle.

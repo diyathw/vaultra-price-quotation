@@ -8,6 +8,8 @@ Live app: https://diyathw.github.io/vaultra-price-quotation/
 
 Every push to `main` runs the calculation tests and production build in GitHub Actions, then deploys `dist` to GitHub Pages. Pull requests run tests and build without deploying. The workflow can also be started manually from the Actions tab. GitHub Pages must use **GitHub Actions** as its publishing source.
 
+The separate **Refresh competitor prices** workflow runs at `17 */6 * * *` (UTC) and can also be started with **Run workflow** in the Actions tab. It fetches published competitor listings, opens Access Storage in Chromium to read its rendered unit prices, validates exact-size rates, builds the app, and deploys the refreshed report. The scheduled snapshot is built into that deployment; it does not commit changing prices to the repository. GitHub may delay scheduled runs, so use each row's capture date and source link before quoting.
+
 The production workflow sets `BASE_PATH=/vaultra-price-quotation/`; local development remains at `/`. The site is public. Customer quotations remain in each visitor's own browser and are not uploaded to GitHub.
 
 ```sh
@@ -20,6 +22,19 @@ Open http://localhost:5173. Enter customer details, choose a floor and unit, adj
 Quotes and the current draft are stored in this browser's localStorage. There is no server, customer account, or email delivery. Saved quotes can be opened, edited and printed.
 
 Use **Quick prices** during a tour to check current read-only online storage rent by floor, size, and unit type, calculate a cylinder-lock total, and review moving-bin and moving-service reference prices. This section never changes the active quotation. Use **Refresh rates** before answering a customer; if the public rate service is unavailable, it shows the checked snapshot in `src/web-rates-fallback.json` and labels it as a fallback.
+
+Use **Competitor prices** to compare exact 5 × 5, 5 × 10, and 10 × 10 sizes at nearby Markham facilities. Vaultra rent is refreshed from its live inventory when available. Competitor rates are dated snapshots from public listings; the report converts weekly rent to four weeks and monthly rent to an estimated four-week amount. Promotions, unit features, tax, insurance, and fees may differ. Public Storage exact-size prices come from its public unit listing feed; Access Storage prices come from its rendered booking page; SmartStop prices come from public page text. Any unavailable exact-size price appears as **Check site**. StorageMart has a dated snapshot while its automatic parser cannot validate its current listing.
+
+To refresh competitor prices locally:
+
+```sh
+node scripts/scrape-competitors.mjs
+npx playwright install chromium
+node scripts/scrape-browser-competitors.mjs
+BASE_PATH=/vaultra-price-quotation/ npm run build
+```
+
+The scripts update `src/competitor-rates.json` only when they find valid exact-size rates. Run them with network access. No customer data is sent to competitor sites.
 
 ## Pricing
 

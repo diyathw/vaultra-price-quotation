@@ -6,8 +6,28 @@
       "name": "Public Storage",
       "address": "189 Bullock Drive, Markham",
       "url": "https://publicstoragecanada.com/self-storage-markham/189-bullock-drive/",
-      "note": "Facility page lists small units from $79/month and medium from $154/month; exact unit prices load separately. These starting prices are not used in the size comparison.",
-      "rates": []
+      "note": "Exact-size rent comes from the facility\u2019s public unit listing feed; confirm unit features and fees.",
+      "rates": [
+        {
+          "size": "5x5",
+          "price": 79,
+          "period": "month",
+          "details": "Lowest available exact-size unit \u00b7 verify access, climate control and fees"
+        },
+        {
+          "size": "5x10",
+          "price": 139,
+          "period": "month",
+          "details": "Lowest available exact-size unit \u00b7 verify access, climate control and fees"
+        },
+        {
+          "size": "10x10",
+          "price": 249,
+          "period": "month",
+          "details": "Lowest available exact-size unit \u00b7 verify access, climate control and fees"
+        }
+      ],
+      "checkedAt": "2026-11-09"
     },
     {
       "id": "access",

@@ -12,6 +12,26 @@ for (const facility of snapshot.facilities) {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const body = textOf(await response.text());
     const rates = [];
+    if (facility.id === 'public') {
+      const html = await (await fetch(facility.url, { signal: AbortSignal.timeout(15000) })).text();
+      const settings = html.match(/var wpApiSettings = (\{[^;]+\});/);
+      if (!settings) throw new Error('Public unit API settings unavailable');
+      const { root, nonce } = JSON.parse(settings[1]);
+      if (new URL(root).origin !== new URL(facility.url).origin || typeof nonce !== 'string') throw new Error('Unexpected Public unit API settings');
+      const unitsResponse = await fetch(new URL('ssmc/v1/unit-types', root), { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-WP-Nonce': nonce }, body: JSON.stringify({ facilityId: 61, sortType: 1 }), signal: AbortSignal.timeout(15000) });
+      if (!unitsResponse.ok) throw new Error(`Public unit API HTTP ${unitsResponse.status}`);
+      const payload = await unitsResponse.json();
+      if (!Array.isArray(payload.unitsDetails)) throw new Error('Unexpected Public unit API response');
+      const best = new Map();
+      for (const unit of payload.unitsDetails) {
+        const width = Number(unit.UnitTypeWidth), length = Number(unit.UnitTypeLength);
+        const size = `${width}x${length}`;
+        const price = Number(unit.InternetPriceAvailable ? unit.InternetPrice : unit.Rent);
+        if (!unit.IsAvailable || Number(unit.AvailableUnits) < 1 || !['5x5', '5x10', '10x10'].includes(size) || !valid(price)) continue;
+        if (!best.has(size) || price < best.get(size).price) best.set(size, { size, price, period: 'month', details: 'Lowest available exact-size unit · verify access, climate control and fees' });
+      }
+      rates.push(...best.values());
+    }
     if (facility.id === 'storagemart') {
       for (const [size, expression] of [
         ['5x5', /5'w\s*X\s*5'd[\s\S]{0,250}?\$(\d+(?:\.\d{2})?)\s*\/mo\s*\$(\d+(?:\.\d{2})?)\s*\/mo/i],
