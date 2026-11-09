@@ -14,8 +14,22 @@
       "name": "Access Storage",
       "address": "8400 Woodbine Avenue, Markham",
       "url": "https://www.accessstorage.ca/self-storage/markham/markham/",
-      "note": "Unit-specific prices were not available in the page text. Open the source or call for a matching unit quote.",
-      "rates": []
+      "note": "Exact-size weekly rates are captured from the browser listing when available; promotions and fees need confirmation.",
+      "rates": [
+        {
+          "size": "10x10",
+          "price": 18,
+          "period": "week",
+          "details": "Advertised weekly rate \u00b7 climate controlled \u00b7 confirm promotion and fees"
+        },
+        {
+          "size": "5x5",
+          "price": 12,
+          "period": "week",
+          "details": "Advertised weekly rate \u00b7 climate controlled \u00b7 confirm promotion and fees"
+        }
+      ],
+      "checkedAt": "2026-11-09"
     },
     {
       "id": "storagemart",
@@ -29,14 +43,14 @@
           "price": 44,
           "regular": 88,
           "period": "month",
-          "details": "50% off 3 months · elevator access · A/C and heat"
+          "details": "50% off 3 months \u00b7 elevator access \u00b7 A/C and heat"
         },
         {
           "size": "5x10",
           "price": 49,
           "regular": 98,
           "period": "month",
-          "details": "50% off 3 months · elevator access · A/C and heat"
+          "details": "50% off 3 months \u00b7 elevator access \u00b7 A/C and heat"
         }
       ],
       "checkedAt": "2026-11-09"

@@ -1,0 +1,47 @@
+name: Refresh competitor prices
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-refs/heads/main
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Scrape HTML listings
+        run: node scripts/scrape-competitors.mjs
+      - name: Install free Chromium browser
+        run: npx playwright install --with-deps chromium
+      - name: Scrape browser listings
+        run: node scripts/scrape-browser-competitors.mjs
+      - run: npm test
+      - run: npm run build
+        env:
+          BASE_PATH: /vaultra-price-quotation/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - name: Deploy refreshed report
+        id: deployment
+        uses: actions/deploy-pages@v4
